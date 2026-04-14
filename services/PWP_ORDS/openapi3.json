@@ -1,0 +1,3754 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Ords Timerite",
+        "version": "1.0.0",
+        "x-vb": {
+            "transforms": {
+                "path": "../Transform.js"
+            }
+        }
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/PWP_DB"
+        }
+    ],
+    "paths": {
+        "/PWP_SupplierDetails": {
+            "get": {
+                "operationId": "getPWP_SupplierDetails",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_SupplierDetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_SupplierDetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_ProjectNumbers": {
+            "get": {
+                "operationId": "getPWP_ProjectNumbers",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_ProjectNumbers"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_ProjectNumbers/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_APInvoiceNumbers": {
+            "get": {
+                "operationId": "getPWP_APInvoiceNumbers",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_APInvoiceNumbers"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_APInvoiceNumbers/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/getaraplinkdetails": {
+            "get": {
+                "operationId": "getGetaraplinkdetails",
+                "parameters": [
+                    {
+                        "name": "p_ap_invoice",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_supplier_name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_project_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetGetaraplinkdetails"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getGetaraplinkdetails/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_ProjectLOV_CriteriaSearch": {
+            "get": {
+                "operationId": "PWP_ProjectLOV_CriteriaSearch",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_ProjectLOV_CriteriaSearch"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/PWP_ProjectLOV_CriteriaSearch/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_ProjectLOV_CriteriaCreate": {
+            "get": {
+                "operationId": "getPWP_ProjectLOV_CriteriaCreate",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_ProjectLOV_CriteriaCreate"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_ProjectLOV_CriteriaCreate/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "x-vb": {
+                            "defaultValue": "1000"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_TopTaskLOV_CriteriaCreate": {
+            "get": {
+                "operationId": "PWP_TopTaskLOV_CriteriaCreate",
+                "parameters": [
+                    {
+                        "name": "project_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_TopTaskLOV_CriteriaCreate"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/PWP_TopTaskLOV_CriteriaCreate/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_SupplierLOV_CriteriaCreate": {
+            "get": {
+                "operationId": "PWP_SupplierLOV_CriteriaCreate",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_SupplierLOV_CriteriaCreate"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/PWP_SupplierLOV_CriteriaCreate/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_SupplierSiteLOV_CriteriaCreate": {
+            "get": {
+                "operationId": "getPWP_SupplierSiteLOV_CriteriaCreate",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_SupplierSiteLOV_CriteriaCreate"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_SupplierSiteLOV_CriteriaCreate/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/pwptest": {
+            "get": {
+                "operationId": "getPwptest",
+                "parameters": [
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "x-vb": {
+                            "defaultValue": "1000"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPwptest"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPwptest/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_Workbench_Search": {
+            "get": {
+                "operationId": "getPWP_Workbench_Search",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_Workbench_Search"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_Workbench_Search/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "p_supplier_name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_project_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "p_ap_invoice",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "p_invoice_hold",
+                        "in": "query",
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_AP_INVOICES_RELEASE/{InvoiceID}": {
+            "parameters": [
+                {
+                    "name": "InvoiceID",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "/PWP_AP_INVOICES_RELEASE": {
+            "post": {
+                "operationId": "postPWP_AP_INVOICES_RELEASE",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostPWP_AP_INVOICES_RELEASERequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postPWP_AP_INVOICES_RELEASE/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                },
+                "parameters": [
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_DISC_WORKBENCH_SEARCH": {
+            "get": {
+                "operationId": "getPWP_DISC_WORKBENCH_SEARCH",
+                "parameters": [
+                    {
+                        "name": "P_PROJECT_NUMBER",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "P_VENDOR_NAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "P_INVOICE_NUMBER",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_DISC_WORKBENCH_SEARCH"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_DISC_WORKBENCH_SEARCH/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_PROJECT_NUMBERS": {
+            "get": {
+                "operationId": "getPWP_PROJECT_NUMBERS",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_PROJECT_NUMBERS"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_PROJECT_NUMBERS/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_TASK_NUMBERS": {
+            "get": {
+                "operationId": "getPWP_TASK_NUMBERS",
+                "parameters": [
+{
+                        "name": "project_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_TASK_NUMBERS"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_TASK_NUMBERS/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_Unmatched_Screen": {
+            "get": {
+                "operationId": "getPWP_Unmatched_Screen",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_Unmatched_Screen"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_Unmatched_Screen/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany",
+                    "queryParameters": {}
+                },
+                "parameters": [
+                    {
+                        "name": "task_name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "supplier_name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "project_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            },
+            "post": {
+                "operationId": "postPWP_Unmatched_Screen",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostPWP_Unmatched_ScreenRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postPWP_Unmatched_Screen/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                },
+                "parameters": [
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_Unmatched_ARInvoices": {
+            "get": {
+                "operationId": "getPWP_Unmatched_ARInvoices",
+                "parameters": [
+                    {
+                        "name": "project_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_Unmatched_ARInvoices"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_Unmatched_ARInvoices/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_ANALYTICS_PAGE": {
+            "get": {
+                "operationId": "getPWP_ANALYTICS_PAGE",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_ANALYTICS_PAGE"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_ANALYTICS_PAGE/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_AP_AGING": {
+            "get": {
+                "operationId": "getPWP_AP_AGING",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_AP_AGING"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_AP_AGING/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_PROJECTSLOV": {
+            "get": {
+                "operationId": "getPWP_PROJECTSLOV",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_PROJECTSLOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_PROJECTSLOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_SUPPLIERLOV": {
+            "get": {
+                "operationId": "getPWP_SUPPLIERLOV",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_SUPPLIERLOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_SUPPLIERLOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_PAGE_RESTRICTION": {
+            "get": {
+                "operationId": "getPWP_PAGE_RESTRICTION",
+                "parameters": [
+                    {
+                        "name": "p_username",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_PAGE_RESTRICTION"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_PAGE_RESTRICTION/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_USER_BU_BASED_WORKBENCH_RESTRICTION": {
+            "get": {
+                "operationId": "getPWP_USER_BU_BASED_WORKBENCH_RESTRICTION",
+                "parameters": [
+                    {
+                        "name": "p_invoice_hold",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_supplier_name",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_project_number",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "p_ap_invoice",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_USER_BU_BASED_WORKBENCH_RESTRICTION"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_USER_BU_BASED_WORKBENCH_RESTRICTION/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_WORKBENCH_APINV_LOV": {
+            "get": {
+                "operationId": "getPWP_WORKBENCH_APINV_LOV",
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_WORKBENCH_APINV_LOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_WORKBENCH_APINV_LOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_WORKBENCH_SUPPLIER_LOV": {
+            "get": {
+                "operationId": "getPWP_WORKBENCH_SUPPLIER_LOV",
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_WORKBENCH_SUPPLIER_LOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_WORKBENCH_SUPPLIER_LOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_WORKBENCH_PROJECT_LOV": {
+            "get": {
+                "operationId": "getPWP_WORKBENCH_PROJECT_LOV",
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_WORKBENCH_PROJECT_LOV"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_WORKBENCH_PROJECT_LOV/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_GET_CRITERIA": {
+            "get": {
+                "operationId": "getPWP_GET_CRITERIA",
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ENABLED_FLAG",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "project_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_GET_CRITERIA"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_GET_CRITERIA/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_UNMATCHED_PROJECTLOV_RT": {
+            "get": {
+                "operationId": "getPWP_UNMATCHED_PROJECTLOV_RT",
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_UNMATCHED_PROJECTLOV_RT"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_UNMATCHED_PROJECTLOV_RT/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/getCriteria": {
+            "get": {
+                "operationId": "getGetCriteria_ords",
+                "parameters": [
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "ENABLED_FLAG",
+                        "in": "query",
+                        "schema": {
+                            "type": "boolean"
+                        }
+                    },
+                    {
+                        "name": "project_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            },
+            "put": {
+                "operationId": "putGetCriteria",
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "update"
+                },
+                "parameters": [
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            },
+            "post": {
+                "operationId": "postGetCriteria",
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                },
+                "parameters": [
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/PWP_Toggle_API": {
+            "get": {
+                "operationId": "getPWP_Toggle_API",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_Toggle_API"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_Toggle_API/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/debug": {
+            "post": {
+                "operationId": "postDebug",
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/PWP_ORCL_REST_API": {
+            "post": {
+                "operationId": "postPWP_ORCL_REST_API",
+                "parameters": [
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "Request for application/json",
+                    "content": {
+                        "application/json": {
+                            "examples": {
+                                "vb": {
+                                    "summary": "Example stored by VB User",
+                                    "externalValue": "./examples/postPWP_ORCL_REST_API/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/PWP_Debug_UserID": {
+            "get": {
+                "operationId": "getPWP_Debug_UserID",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_Debug_UserID"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_Debug_UserID/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_Debug_SessionID": {
+            "get": {
+                "operationId": "getPWP_Debug_SessionID",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_Debug_SessionID"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_Debug_SessionID/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_DebugLogs": {
+            "get": {
+                "operationId": "getPWP_DebugLogs",
+                "parameters": [
+                    {
+                        "name": "P_SESSION_ID",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "P_USER_ID",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "P_START_DATE",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "P_END_DATE",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_DebugLogs"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_DebugLogs/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/PWP_ANALYTICS_SEARCH": {
+            "get": {
+                "operationId": "getPWP_ANALYTICS_SEARCH",
+                "parameters": [
+                    {
+                        "name": "PROJECT_NAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "SUPPLIER_NAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "P_USERNAME",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetPWP_ANALYTICS_SEARCH"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getPWP_ANALYTICS_SEARCH/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GetPWP_SupplierDetails": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "supplier_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_ProjectNumbers": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_number": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_APInvoiceNumbers": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "ap_invoice": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetGetaraplinkdetails": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "ap_invoice": {
+                                    "type": "string"
+                                },
+                                "ap_invoice_date": {
+                                    "type": "string"
+                                },
+                                "ap_invoice_amount": {
+                                    "type": "number"
+                                },
+                                "supplier_name": {
+                                    "type": "string"
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                },
+                                "hold_name": {
+                                    "type": "string"
+                                },
+                                "hold_date": {
+                                    "type": "string"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "ar_invoice": {
+                                    "type": "string"
+                                },
+                                "ar_invoice_amount": {
+                                    "type": "number"
+                                },
+                                "attribute1": {
+                                    "type": "string"
+                                },
+                                "attribute2": {
+                                    "type": "string"
+                                },
+                                "lag_days": {
+                                    "type": "integer"
+                                },
+                                "po_number": {
+                                    "type": "string"
+                                },
+                                "receipt_number": {
+                                    "type": "string"
+                                },
+                                "attribute_3": {
+                                    "type": "string"
+                                },
+                                "attribute_4": {
+                                    "type": "string"
+                                },
+                                "attribute_5": {
+                                    "type": "string"
+                                },
+                                "currency_code": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_ProjectLOV_CriteriaSearch": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_name": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_ProjectLOV_CriteriaCreate": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_TopTaskLOV_CriteriaCreate": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "task_id": {
+                                    "type": "integer"
+                                },
+                                "task_number": {
+                                    "type": "string"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_SupplierLOV_CriteriaCreate": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "vendor_id": {
+                                    "type": "integer"
+                                },
+                                "segment1": {
+                                    "type": "string"
+                                },
+                                "party_id": {
+                                    "type": "integer"
+                                },
+                                "vendor_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_SupplierSiteLOV_CriteriaCreate": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "supplier_site": {
+                                    "type": "string"
+                                },
+                                "site_id": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPwptest": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_Workbench_Search": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "project_status_code": {
+                                    "type": "string"
+                                },
+                                "task_id": {
+                                    "type": "integer"
+                                },
+                                "task_number": {
+                                    "type": "string"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                },
+                                "expenditure_type_name": {
+                                    "type": "string"
+                                },
+                                "expenditure_category_name": {
+                                    "type": "string"
+                                },
+                                "vendor_id": {
+                                    "type": "integer"
+                                },
+                                "vendor_name": {
+                                    "type": "string"
+                                },
+                                "supplier_number": {
+                                    "type": "string"
+                                },
+                                "party_id": {
+                                    "type": "integer"
+                                },
+                                "party_name": {
+                                    "type": "string"
+                                },
+                                "invoice_amount": {
+                                    "type": "string"
+                                },
+                                "invoice_currency_code": {
+                                    "type": "string"
+                                },
+                                "invoice_number": {
+                                    "type": "string"
+                                },
+                                "invoice_status": {
+                                    "type": "string"
+                                },
+                                "invoice_id": {
+                                    "type": "integer"
+                                },
+                                "po_number": {
+                                    "type": "string"
+                                },
+                                "invoice_hold_applied": {
+                                    "type": "string"
+                                },
+                                "attribute_1": {
+                                    "type": "string"
+                                },
+                                "attribute_2": {
+                                    "type": "string"
+                                },
+                                "attribute_3": {
+                                    "type": "string"
+                                },
+                                "attribute_4": {
+                                    "type": "string"
+                                },
+                                "attribute_5": {
+                                    "type": "string"
+                                },
+                                "created_by": {
+                                    "nullable": true
+                                },
+                                "lag_days": {
+                                    "type": "string"
+                                },
+                                "supplier_id": {
+                                    "nullable": true
+                                },
+                                "top_task_id": {
+                                    "type": "integer"
+                                },
+                                "hold_id": {
+                                    "type": "integer"
+
+                                },
+                                "project_start_date": {
+                                    "type": "string"
+                                },
+                                "last_update_date": {
+                                    "nullable": true
+                                },
+                                "project_end_date": {
+                                    "nullable": true
+                                },
+                                "last_updated_date": {
+                                    "type": "string"
+                                },
+                                "creation_date": {
+                                    "type": "string"
+                                },
+                                "invoice_creation_date": {
+                                    "type": "string"
+                                },
+                                "hold_date": {
+                                    "type": "string"
+
+                                },
+                                "po_receipt_number": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "ar_receipt_number": {
+                                    "nullable": true
+                                },
+                                "ar_invoice_number": {
+                                    "nullable": true
+                                },
+                                "ar_invoice_amount": {
+                                    "nullable": true
+                                },
+                                "ar_invoice_dueamount": {
+                                    "nullable": true
+                                },
+                                "ar_cust_trx_id": {
+                                    "nullable": true
+                                },
+                                "contract_number": {
+                                    "nullable": true
+                                },
+                                "customer_name": {
+                                    "nullable": true
+                                },
+                                "hold_release_date": {
+                                    "nullable": true
+                                }
+
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PatchPWP_AP_INVOICES_RELEASEInvoiceIDRequest": {
+                "type": "object",
+                "properties": {
+                    "P_INVOICE_ID": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PostPWP_AP_INVOICES_RELEASERequest": {
+                "type": "object",
+                "properties": {
+                    "P_INVOICE_ID": {
+                        "type": "integer"
+                    }
+                }
+            },
+            "GetPWP_DISC_WORKBENCH_SEARCH": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "project_status_code": {
+                                    "type": "string"
+                                },
+                                "task_id": {
+                                    "type": "integer"
+                                },
+                                "task_number": {
+                                    "type": "string"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                },
+                                "expenditure_type_name": {
+                                    "type": "string"
+                                },
+                                "expenditure_category_name": {
+                                    "type": "string"
+                                },
+                                "vendor_id": {
+                                    "type": "integer"
+                                },
+                                "vendor_name": {
+                                    "type": "string"
+                                },
+                                "supplier_number": {
+                                    "type": "string"
+                                },
+                                "party_id": {
+                                    "type": "integer"
+                                },
+                                "party_name": {
+                                    "type": "string"
+                                },
+                                "invoice_amount": {
+                                    "type": "string"
+                                },
+                                "invoice_currency_code": {
+                                    "type": "string"
+                                },
+                                "invoice_number": {
+                                    "type": "string"
+                                },
+                                "invoice_status": {
+                                    "type": "string"
+                                },
+                                "invoice_id": {
+                                    "type": "integer"
+                                },
+                                "po_number": {
+                                    "type": "string"
+                                },
+                                "invoice_hold_applied": {
+                                    "type": "string"
+                                },
+                                "attribute_1": {
+                                    "type": "string"
+                                },
+                                "attribute_2": {
+                                    "type": "string"
+                                },
+                                "attribute_3": {
+                                    "type": "string"
+                                },
+                                "attribute_4": {
+                                    "type": "string"
+                                },
+                                "attribute_5": {
+                                    "type": "string"
+                                },
+                                "created_by": {
+                                    "nullable": true
+                                },
+                                "lag_days": {
+                                    "type": "string"
+                                },
+                                "supplier_id": {
+                                    "nullable": true
+                                },
+                                "top_task_id": {
+                                    "type": "integer"
+                                },
+                                "hold_id": {
+                                    "type": "integer"
+                                },
+                                "project_start_date": {
+                                    "type": "string"
+                                },
+                                "last_update_date": {
+                                    "nullable": true
+                                },
+                                "project_end_date": {
+                                    "nullable": true
+                                },
+                                "last_updated_date": {
+                                    "type": "string"
+                                },
+                                "creation_date": {
+                                    "type": "string"
+                                },
+                                "invoice_creation_date": {
+                                    "type": "string"
+                                },
+                                "hold_date": {
+                                    "type": "string"
+                                },
+                                "po_receipt_number": {
+                                    "type": "string"
+                                },
+                                "ar_receipt_number": {
+                                    "nullable": true
+                                },
+                                "ar_invoice_number": {
+                                    "type": "string"
+                                },
+                                "ar_invoice_amount": {
+                                    "type": "string"
+                                },
+                                "ar_invoice_dueamount": {
+                                    "type": "string"
+                                },
+                                "ar_cust_trx_id": {
+                                    "type": "integer"
+                                },
+                                "contract_number": {
+                                    "nullable": true
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                },
+                                "hold_release_date": {
+                                    "type": "string"
+                                },
+                                "ap_remaining_amount": {
+                                    "nullable": true
+                                },
+                                "ap_due_date": {
+                                    "nullable": true
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_PROJECT_NUMBERS": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "businessunit_name": {
+                                    "type": "string"
+                                },
+                                "businessunit_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "project_id": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_TASK_NUMBERS": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "task_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_Unmatched_Screen": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "project_status_code": {
+                                    "type": "string"
+                                },
+                                "task_id": {
+                                    "type": "integer"
+                                },
+                                "task_number": {
+                                    "type": "string"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                },
+                                "expenditure_type_name": {
+                                    "type": "string"
+                                },
+                                "expenditure_category_name": {
+                                    "type": "string"
+                                },
+                                "vendor_id": {
+                                    "type": "integer"
+                                },
+                                "vendor_name": {
+                                    "type": "string"
+                                },
+                                "supplier_number": {
+                                    "type": "string"
+                                },
+                                "party_id": {
+                                    "type": "integer"
+                                },
+                                "party_name": {
+                                    "type": "string"
+                                },
+                                "invoice_amount": {
+                                    "type": "string"
+                                },
+                                "invoice_currency_code": {
+                                    "type": "string"
+                                },
+                                "invoice_number": {
+                                    "type": "string"
+                                },
+                                "invoice_status": {
+                                    "type": "string"
+                                },
+                                "invoice_id": {
+                                    "type": "integer"
+                                },
+                                "po_number": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "invoice_hold_applied": {
+                                    "type": "string"
+                                },
+                                "attribute_1": {
+                                    "type": "string"
+                                },
+                                "attribute_2": {
+                                    "type": "string"
+                                },
+                                "attribute_3": {
+                                    "type": "string"
+                                },
+                                "attribute_4": {
+                                    "type": "string"
+                                },
+                                "attribute_5": {
+                                    "type": "string"
+                                },
+                                "created_by": {
+                                    "nullable": true
+                                },
+                                "lag_days": {
+                                    "type": "string"
+                                },
+                                "supplier_id": {
+                                    "nullable": true
+                                },
+                                "top_task_id": {
+                                    "type": "integer"
+                                },
+                                "hold_id": {
+                                    "type": "integer"
+                                },
+                                "project_start_date": {
+                                    "type": "string"
+                                },
+                                "last_update_date": {
+                                    "nullable": true
+                                },
+                                "project_end_date": {
+                                    "nullable": true
+                                },
+                                "last_updated_date": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "creation_date": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "invoice_creation_date": {
+                                    "type": "string"
+                                },
+                                "hold_date": {
+                                    "type": "string"
+                                },
+                                "po_receipt_number": {
+                                    "type": "string"
+                                },
+                                "ar_receipt_number": {
+                                    "nullable": true
+                                },
+                                "ar_invoice_number": {
+                                    "nullable": true
+                                },
+                                "ar_invoice_amount": {
+                                    "nullable": true
+                                },
+                                "ar_invoice_dueamount": {
+                                    "nullable": true
+                                },
+                                "ar_cust_trx_id": {
+                                    "nullable": true
+                                },
+                                "contract_number": {
+                                    "nullable": true
+                                },
+                                "customer_name": {
+                                    "nullable": true
+                                },
+                                "hold_release_date": {
+                                    "nullable": true
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PostPWP_Unmatched_ScreenRequest": {
+                "type": "object",
+                "properties": {
+                    "AR_INVOICE_NUMBER": {
+                        "type": "string"
+                    },
+                    "AR_INVOICE_AMOUNT": {
+                        "type": "string"
+                    },
+                    "AR_INVOICE_DUEAMOUNT": {
+                        "type": "string"
+                    },
+                    "customer_name": {
+                        "type": "string"
+                    },
+                    "invoice_id": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetPWP_Unmatched_ARInvoices": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "customer_trx_id": {
+                                    "type": "string"
+                                },
+                                "ar_invoice_number": {
+                                    "type": "string"
+                                },
+                                "ar_invoice_amount": {
+                                    "nullable": true
+                                },
+                                "ar_invoice_date": {
+                                    "type": "string"
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_ANALYTICS_PAGE": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "metric": {
+                                    "type": "string"
+                                },
+                                "value_example": {
+                                    "type": "number"
+                                },
+                                "notes": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_AP_AGING": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "aging_bucket": {
+                                    "type": "string"
+                                },
+                                "amountheld_of_invoices": {
+                                    "nullable": true
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_PROJECTSLOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_SUPPLIERLOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "vendor_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_PAGE_RESTRICTION": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "username": {
+                                    "type": "string"
+                                },
+                                "access_flag": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_USER_BU_BASED_WORKBENCH_RESTRICTION": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "project_status_code": {
+                                    "type": "string"
+                                },
+                                "task_id": {
+                                    "type": "integer"
+                                },
+                                "task_number": {
+                                    "type": "string"
+                                },
+                                "task_name": {
+                                    "type": "string"
+                                },
+                                "expenditure_type_name": {
+                                    "type": "string"
+                                },
+                                "expenditure_category_name": {
+                                    "type": "string"
+                                },
+                                "vendor_id": {
+                                    "type": "integer"
+                                },
+                                "vendor_name": {
+                                    "type": "string"
+                                },
+                                "supplier_number": {
+                                    "type": "string"
+                                },
+                                "party_id": {
+                                    "type": "integer"
+                                },
+                                "party_name": {
+                                    "type": "string"
+                                },
+                                "invoice_amount": {
+                                    "type": "string"
+                                },
+                                "invoice_currency_code": {
+                                    "type": "string"
+                                },
+                                "invoice_number": {
+                                    "type": "string"
+                                },
+                                "invoice_status": {
+                                    "type": "string"
+                                },
+                                "invoice_id": {
+                                    "type": "integer"
+                                },
+                                "po_number": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "invoice_hold_applied": {
+                                    "type": "string"
+                                },
+                                "attribute_1": {
+                                    "type": "string"
+                                },
+                                "attribute_2": {
+                                    "type": "string"
+                                },
+                                "attribute_3": {
+                                    "type": "string"
+                                },
+                                "attribute_4": {
+                                    "type": "string"
+                                },
+                                "attribute_5": {
+                                    "type": "string"
+                                },
+                                "created_by": {
+                                    "nullable": true
+                                },
+                                "lag_days": {
+                                    "type": "string"
+                                },
+                                "top_task_id": {
+                                    "type": "integer"
+                                },
+                                "hold_id": {
+                                    "type": "integer"
+                                },
+                                "project_start_date": {
+                                    "type": "string"
+                                },
+                                "last_update_date": {
+                                    "nullable": true
+                                },
+                                "project_end_date": {
+                                    "nullable": true
+                                },
+                                "last_updated_date": {
+                                    "type": "string"
+                                },
+                                "creation_date": {
+                                    "type": "string"
+                                },
+                                "invoice_creation_date": {
+                                    "type": "string"
+                                },
+                                "hold_date": {
+                                    "type": "string"
+                                },
+                                "po_receipt_number": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "ar_receipt_number": {
+                                    "nullable": true
+                                },
+                                "ar_invoice_number": {
+                                    "type": "string"
+                                },
+                                "ar_invoice_amount": {
+                                    "nullable": true
+                                },
+                                "ar_invoice_dueamount": {
+                                    "nullable": true
+                                },
+                                "ar_cust_trx_id": {
+                                    "nullable": true
+                                },
+                                "contract_number": {
+                                    "nullable": true
+                                },
+                                "customer_name": {
+                                    "type": "string"
+                                },
+                                "hold_release_date": {
+                                    "type": "string"
+                                },
+                                "ap_remaining_amount": {
+                                    "type": "string"
+                                },
+                                "ap_due_date": {
+                                    "type": "string",
+                                    "nullable": true
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_WORKBENCH_APINV_LOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "ap_invoice": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_WORKBENCH_SUPPLIER_LOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "supplier_name": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_WORKBENCH_PROJECT_LOV": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_number": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_GET_CRITERIA": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_id": {
+                                    "type": "integer"
+                                },
+                                "top_task_id": {
+                                    "type": "integer",
+                                    "nullable": true
+                                },
+                                "include_subtask_flag": {
+                                    "type": "string"
+                                },
+                                "task_id": {
+                                    "type": "integer",
+                                    "nullable": true
+                                },
+                                "expenditure_category": {
+                                    "type": "string"
+                                },
+                                "include_allexp_typ_flag": {
+                                    "type": "string"
+                                },
+                                "expenditure_type": {
+                                    "type": "string"
+                                },
+                                "supplier_id": {
+                                    "type": "integer"
+                                },
+                                "start_dt": {
+                                    "type": "string"
+                                },
+                                "end_dt": {
+                                    "type": "string"
+                                },
+                                "lag_days": {
+                                    "nullable": true
+                                },
+                                "enabled_flag": {
+                                    "type": "string"
+                                },
+                                "new_column_13": {
+                                    "nullable": true
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "top_task_name": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "task_name": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "supplier_name": {
+                                    "type": "string"
+                                },
+                                "invoice_amount_limit": {
+                                    "type": "integer"
+                                },
+                                "creation_date": {
+                                    "type": "string"
+                                },
+                                "criteria_name": {
+                                    "type": "string"
+                                },
+                                "supplier_site": {
+                                    "type": "string"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "criteria_id": {
+                                    "type": "integer"
+                                },
+                                "contract_number": {
+                                    "nullable": true
+                                },
+                                "businessunit_name": {
+                                    "type": "string"
+                                },
+                                "businessunit_id": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_UNMATCHED_PROJECTLOV_RT": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "businessunit_name": {
+                                    "type": "string"
+                                },
+                                "businessunit_id": {
+                                    "type": "integer"
+                                },
+                                "project_number": {
+                                    "type": "string"
+                                },
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "project_id": {
+                                    "type": "integer"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_Toggle_API": {
+                "type": "object",
+                "properties": {
+                    "trace_id": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_Debug_UserID": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "user_id": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_Debug_SessionID": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "session_id": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_DebugLogs": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "sequence_id": {
+                                    "type": "integer"
+                                },
+                                "session_id": {
+                                    "type": "string"
+                                },
+                                "user_id": {
+                                    "type": "string"
+                                },
+                                "page_name": {
+                                    "type": "string"
+                                },
+                                "api_name": {
+                                    "type": "string"
+                                },
+                                "procedure_name": {
+                                    "type": "string"
+                                },
+                                "level_id": {
+                                    "nullable": true
+                                },
+                                "debug_message": {
+                                    "type": "string"
+                                },
+                                "creationdatewithtimestamp": {
+                                    "type": "string"
+                                },
+                                "error_code": {
+                                    "nullable": true
+                                },
+                                "error_details": {
+                                    "type": "string"
+                                },
+                                "severity_level": {
+                                    "type": "string"
+                                },
+                                "application_name": {
+                                    "type": "string"
+                                },
+                                "record_source": {
+                                    "nullable": true
+                                },
+                                "environment": {
+                                    "nullable": true
+                                },
+                                "host_name": {
+                                    "nullable": true
+                                },
+                                "request_id": {
+                                    "nullable": true
+                                },
+                                "created_by": {
+                                    "type": "string"
+                                },
+                                "creation_date": {
+                                    "type": "string"
+                                },
+                                "last_updated_by": {
+                                    "type": "string"
+                                },
+                                "last_update_date": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetPWP_ANALYTICS_SEARCH": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "project_name": {
+                                    "type": "string"
+                                },
+                                "vendor_name": {
+                                    "type": "string"
+                                },
+                                "ar_invoices_amount": {
+                                    "nullable": true
+                                },
+                                "ap_invoices_approved": {
+                                    "nullable": true
+                                },
+                                "ap_invoices_paid": {
+                                    "nullable": true
+                                },
+                                "pending_ap_invoices_amount": {
+                                    "nullable": true
+                                },
+                                "percentage_amount_released": {
+                                    "nullable": true
+                                }
+                            }
+                        }
+                    },
+                    "hasMore": {
+                        "type": "boolean"
+                    },
+                    "limit": {
+                        "type": "integer"
+                    },
+                    "offset": {
+                        "type": "integer"
+                    },
+                    "count": {
+                        "type": "integer"
+                    },
+                    "links": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "rel": {
+                                    "type": "string"
+                                },
+                                "href": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

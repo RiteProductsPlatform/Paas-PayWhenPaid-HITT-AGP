@@ -1,0 +1,315 @@
+<oj-sp-welcome-page id="oj-sp-wp1" page-title="PWP Criteria" primary-action.display="off" primary-action.label="Done"
+  illustration-background="[[ $variables.illustrationBackground ]]"
+  illustration-foreground="[[ $variables.illustrationForeground ]]" background-color="dark-pebble">
+  <div class="oj-panel" style="margin-top:-45px">
+
+    <!-- <div class="oj-flex-item oj-sm-flex-initial oj-sm-margin-2x-end"> -->
+      <oj-form-layout columns="5" label-edge="top" max-columns="5">
+        <oj-select-single label-hint="Project Name" item-text="project_name" style="width:22vw"
+          on-value-item-changed="[[$listeners.selectValueItem]]" value="{{ $variables.searchProjectName }}"
+          data="[[$variables.pWPProjectLOVCriteriaSearchListSDP]]" Show Busy State=""></oj-select-single>
+
+        <oj-select-single label-hint="Enable Criteria" style="width:22vw" data="[[ $application.variables.YesNoADP ]]"
+          item-text="LookupCode" value="{{ $variables.headers_enable_Criteria }}"></oj-select-single>
+
+      </oj-form-layout>
+      <div class="oj-helper-text-align-right">
+
+      <oj-button label="Search" chroming="callToAction" class="oj-button-sm"
+        on-oj-action="[[$listeners.buttonAction6]]">
+        <span class="oj-ux-ico-search" slot="startIcon"></span>
+      </oj-button>
+      <oj-button chroming="callToAction" class="oj-button-sm" label="Reset" on-oj-action="[[$listeners.buttonAction5]]">
+        <span class="oj-ux-ico-refresh" slot="startIcon"></span>
+      </oj-button>
+      <oj-button chroming="callToAction" class="oj-button-sm" label="Create Criteria"
+        on-oj-action="[[$listeners.buttonAction2]]">
+      </oj-button>
+
+      <!-- added trace id logic for debugging mechaism -->
+      <oj-switch label-hint="Enable Trace" value="[[$application.variables.enableTrace]]" style="margin-top:-12px"
+        on-value-changed="[[$listeners.switchValue3]]"></oj-switch>
+      <!-- <oj-label>Trace ID:</oj-label> -->
+      <b>
+      <oj-bind-text
+        value='[[ $application.variables.traceIdDisplay ? "Trace ID:" + $application.variables.traceIdDisplay : "Trace ID" ]]'></oj-bind-text>
+      </b>
+    <!-- </div> -->
+    </div>
+    
+
+    <div>
+
+      <oj-table scroll-policy="loadMoreOnScroll" id="criteria" columns-default.resizable="enabled"
+        columns='[{"headerText":"Action","field":"","sortable":"disabled","template":"editicon","width":70},{"headerText":"Criteria Name","field":"criteria_name"},{"headerText":"Project Name","field":"project_name"},{"headerText":"Top Task Name","field":"top_task_name"},{"headerText":"Task Name","field":"task_name"},{"headerText":"Expenditure Category","field":"expenditure_category"},{"headerText":"Expenditure Type","field":"expenditure_type"},{"headerText":"Supplier Name","field":"supplier_name"},{"headerText":"Start Date","field":"start_dt","template":"date"},{"headerText":"End Date","field":"end_dt","template":"date"},{"headerText":"Lag Days","field":"lag_days"},{"headerText":"Enabled Criteria","field":"enabled_flag"}]'
+        display="grid" selection-mode.column="single" selection-mode.row="none" style="width:94vw;height:60vh"
+        data="[[ $variables.tableData ]]">
+        <template slot="checkTemplate" data-oj-as="cell">
+          <oj-switch value="[[cell.data === 'true' ? true : false]]"
+            style="--oj-switch-thumb-diameter: 24px; --oj-switch-track-height: 19px; --oj-switch-track-width: 38px; --color: Green; padding-center:1vw;"
+            class="o oj-switch" on-value-changed="[[$listeners.switchValue2]]">
+          </oj-switch>
+
+        </template>
+        <template slot="editicon">
+          <oj-button chroming="borderless" class="oj-button-sm">
+            <span class="oj-ux-ico-edit" style="font-weight:bold;font-size:22px;cursor:pointer"
+            on-click="[[$listeners.iconClick]]" slot="startIcon"></span>
+          </oj-button>
+        </template>
+
+        <template slot="date">
+          <oj-bind-text value="[[ $functions.formatDate($current.data) ]]"></oj-bind-text>
+        </template>
+      </oj-table>
+    </div>
+
+  </div>
+
+
+  <oj-dialog dialog-title='[[ $variables.dialogLabel+ " " + " PWP Criteria" ]]' id="Add-criteria-modal"
+    drag-affordance="none" style="width: 70%;">
+
+    <!-- <oj-sample-show-when-ready> -->
+    <div slot="body">
+      <div class="oj-flex">
+        <div class="oj-flex-item">
+          <oj-validation-group id="search">
+            <oj-form-layout class="oj-formlayout-full-width" columns="3" max-columns="3" label-edge="top">
+              <oj-input-text label-hint="Criteria Name" required="true" value="{{ $variables.createobj.criteria_name }}"
+                disabled='[[ $variables.dialogLabel === "Edit" ]]'>
+              </oj-input-text>
+
+
+              <oj-select-single label-hint="Project Name" on-value-item-changed="[[$listeners.selectValueItem14]]"
+                value="{{ $variables.createobj.project_name }}" on-keyup="[[$listeners.selectKeyup]]" required="true"
+                item-text="name" data="[[ $variables.projectsAdp ]]" on-click="[[$listeners.selectClick]]">
+              </oj-select-single>
+
+
+              <oj-select-single label-hint="Top Tasks" item-text="name"
+                on-value-item-changed="[[$listeners.selectValueItem10]]"
+                value="{{ $variables.createobj.top_task_name }}" on-keyup="[[$listeners.selectKeyup2]]"
+                data="[[ $variables.topTaskAdp ]]" on-click="[[$listeners.selectClick5]]">
+              </oj-select-single>
+
+              <oj-select-single label-hint="Task Name" item-text="name" value="{{ $variables.createobj.task_name }}"
+                on-value-item-changed="[[$listeners.selectValueItem12]]" on-keyup="[[$listeners.selectKeyup3]]"
+                data="[[ $variables.tasksAdp ]]" on-click="[[$listeners.selectClick6]]">
+              </oj-select-single>
+
+              <oj-select-single label-hint="Expenditure Category"
+                value="{{ $variables.createobj.expenditure_category }}" item-text="name"
+                on-value-item-changed="[[$listeners.selectValueItem11]]" on-keyup="[[$listeners.selectKeyup4]]"
+                data="[[ $variables.expCatAdp ]]" on-click="[[$listeners.selectClick2]]"></oj-select-single>
+
+
+              <!-- <oj-select-single label-hint="Expenditure Category"
+                value="{{ $variables.createobj.expenditure_category }}" item-text="name"
+                on-value-item-changed="[[$listeners.selectValueItem11]]" on-keyup="[[$listeners.selectKeyup4]]"
+                data="[[$variables.getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPEXPCATEGORYSYNC1GetprojectsListSDP2]]"></oj-select-single> -->
+
+
+              <oj-select-single label-hint="Expenditure Type" value="{{ $variables.createobj.expenditure_type }}"
+                item-text="name" data="[[ $variables.expTypeAdp ]]" on-click="[[$listeners.selectClick7]]">
+              </oj-select-single>
+
+              <!-- <oj-select-single label-hint="Expenditure Type" value="{{ $variables.createobj.expenditure_type }}"
+             item-text="name"
+             data="[[$variables.getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPEXPENDITURTYPE1GetprojectsListSDP2]]" >
+            </oj-select-single> -->
+
+              <!-- <div>
+              <span style="font-weight:600;font-size:12px;display:inline-block;margin-bottom:5px">Supplier Name</span>
+              <oj-input-search placeholder="Enter 3 Characters" value="{{ $variables.createobj.supplier_name }}"
+                raw-value="{{ $variables.createobj.supplier_name }}" suggestion-item-text="Supplier"
+                on-oj-value-action="[[$listeners.inputSearchValueAction4]]"
+                suggestions="[[$variables.getFscmRestApiResources1113185SuppliersListSDP]]"
+                on-keyup="[[$listeners.inputSearchKeyup2]]" id="supplier">
+              </oj-input-search>
+            </div> -->
+
+              <!-- <oj-select-single label-hint="Supplier" item-text="name" value="{{ $variables.createobj.supplier_name }}"
+              on-value-item-changed="[[$listeners.selectValueItem13]]" on-keyup="[[$listeners.selectKeyup5]]"
+              required="true"
+              data="[[$variables.getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPSUPPLIERSSYNC1GetprojectsListSDP2]]"  >
+            </oj-select-single> -->
+
+              <oj-select-single label-hint="Supplier" item-text="name" value="{{ $variables.createobj.supplier_name }}"
+                on-value-item-changed="[[$listeners.selectValueItem13]]" on-keyup="[[$listeners.selectKeyup5]]"
+                data="[[ $variables.suppliersAdp ]]" on-click="[[$listeners.selectClick3]]">
+              </oj-select-single>
+
+              <!-- <oj-select-single label-hint="Supplier Site" item-text="name"
+              value="{{ $variables.createobj.supplier_site }}" data="[[ $variables.supplierSitesAdp ]]"></oj-select-single> -->
+
+              <oj-select-single label-hint="Supplier Site" item-text="name"
+                value="{{ $variables.createobj.supplier_site }}"
+                data="[[$variables.getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPVENDORSITESSYNC1GetprojectsListSDP2]]"
+                on-click="[[$listeners.selectClick8]]">
+              </oj-select-single>
+
+              <!-- <oj-bind-if test="[[ $variables.createobj.supplier_id ]]">
+          <div>
+              <span style="font-weight:600;font-size:12px;display:inline-block;margin-bottom:5px">Supplier Site</span>
+            <oj-input-search placeholder="Enter 3 Characters" value="{{ $variables.createobj.supplier_site }}"
+              raw-value="{{ $variables.createobj.supplier_site }}"
+              suggestions="[[$variables.get1113185SuppliersLOVSupplierIdChildSitesLOVListSDP2]]"
+              suggestion-item-text="SupplierSite">
+            </oj-input-search>
+          </div>
+            </oj-bind-if>
+
+            <oj-bind-if test="[[ !$variables.createobj.supplier_id ]]">
+          <div>
+              <span style="font-weight:600;font-size:12px;display:inline-block;margin-bottom:5px">Supplier Site</span>
+            <oj-input-search placeholder="Enter 3 Characters" suggestion-item-text="SupplierSite">
+            </oj-input-search>
+          </div>
+            </oj-bind-if> -->
+
+              <oj-select-single label-hint="Contract Number" value="{{ $variables.createobj.contract_num }}"
+                item-text="name" data="[[ $variables.contractAdp ]]" on-click="[[$listeners.selectClick4]]">
+              </oj-select-single>
+
+              <oj-input-date label-hint="Start Date" on-value-changed="[[$listeners.inputDateValue]]"
+                value="{{ $variables.createobj.start_dt_copy }}" required="true" min="[[ $variables.minDate ]]">
+              </oj-input-date>
+              <oj-input-date label-hint="End Date" on-value-changed="[[$listeners.inputDateValue2]]"
+                value="{{ $variables.createobj.end_dt_copy }}" required="true"
+                min="[[ $variables.createobj.start_dt_copy ]]">
+              </oj-input-date>
+              <oj-input-number label-hint="Lag Days" on-value-changed="[[$listeners.inputNumberValue]]"
+                value="{{ $variables.createobj.lag_days }}"></oj-input-number>
+              <oj-input-number label-hint="Invoice Amount" on-value-changed="[[$listeners.inputNumberValue2]]"
+                value="{{ $variables.createobj.invoice_amount_limit }}">
+              </oj-input-number>
+
+              <oj-switch label-hint="Enable Flag" class="oj-switch" on-value-changed="[[$listeners.switchValue]]"
+                value="{{ $variables.createobj.enabled_flag }}">
+              </oj-switch>
+              <!-- <oj-select-single label-hint="Enable Criteria" value="{{ $variables.createobj.enabled_flag }}"
+              data="[[ $application.variables.YesNoADP ]]" item-text="LookupCode"
+            >
+            </oj-select-single> -->
+
+            </oj-form-layout>
+          </oj-validation-group>
+        </div>
+      </div>
+    </div>
+    <div slot="footer">
+      <oj-bind-if test='[[ $variables.dialogLabel === "Define" ]]'>
+        <oj-button label="Create Criteria" chroming="callToAction" on-oj-action="[[$listeners.buttonAction4]]"
+          class="oj-button-sm">
+          <span class="oj-ux-ico-save" slot="startIcon"></span>
+
+        </oj-button>
+      </oj-bind-if>
+      <oj-bind-if test='[[ $variables.dialogLabel === "Edit" ]]'>
+        <oj-button label="Update" chroming="callToAction" on-oj-action="[[$listeners.buttonAction7]]"
+          class="oj-button-sm">
+          <span class="oj-ux-ico-save" slot="startIcon"></span>
+        </oj-button>
+      </oj-bind-if>
+      <oj-button label="Close" chroming="callToAction" on-oj-action="[[$listeners.buttonAction3]]" class="oj-button-sm">
+        <span class="oj-ux-ico-logout" slot="endIcon"></span>
+
+      </oj-button>
+    </div>
+    <!-- </oj-sample-show-when-ready> -->
+
+
+  </oj-dialog>
+</oj-sp-welcome-page>
+
+
+
+<oj-dialog id="searchDailog_like_project">
+  <div slot="body">
+    <div class="oj-flex">
+      <oj-form-layout columns="1" label-edge="top" class="oj-sm-margin-9x-top">
+        <oj-input-text style="width:20vw" label-hint="Project Name" value="{{ $variables.createobj.project_name }}">
+          <oj-button slot="end" class="oj-button-sm" chroming="borderless" on-oj-action="[[$listeners.buttonAction10]]">
+            <span class="oj-ux-ico-search" style="font-size:18px;cursor:pointer" ></span>
+          </oj-button>
+        </oj-input-text>
+      </oj-form-layout>
+    </div>
+    <div class="oj-flex">
+      <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12" style="height:200px;width:200px"
+        columns-default.resizable="enabled"
+        columns='[{"headerText":"Project Name","field":"ProjectName"},{"headerText":"Project Number","field":"ProjectNumber"}]'
+        selection-mode.row="single" data="[[ $variables.getProjectsADP ]]"
+        on-first-selected-row-changed="[[$listeners.tableFirstSelectedRow]]">
+      </oj-table>
+    </div>
+  </div>
+  <div slot="footer">
+    <oj-button class="oj-button-sm" chroming="callToAction" label="Close" on-oj-action="[[$listeners.buttonAction9]]">
+      <span class="oj-ux-ico-close"></span>
+    </oj-button>
+  </div>
+</oj-dialog>
+
+<oj-dialog id="searchDailog_like_Toptask" style="height:500px">
+  <div slot="body">
+    <div class="oj-flex">
+      <oj-form-layout columns="1" label-edge="top">
+        <oj-input-text style="width:20vw" label-hint="Top Task" value="{{ $variables.createobj.top_task_name }}">
+          <oj-button slot="end" class="oj-button-sm" chroming="borderless" on-oj-action="[[$listeners.buttonAction12]]">
+            <span class="oj-ux-ico-search" style="font-size:18px;cursor:pointer" ></span>
+          </oj-button>
+        </oj-input-text>
+      </oj-form-layout>
+    </div>
+    <div class="oj-flex">
+      <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12" style="height:200px;width:200px"
+        columns-default.resizable="enabled" selection-mode.row="single" data="[[ $variables.TopTasksADP ]]"
+        columns='[{"headerText":"TaskName","field":"TaskName"}]'
+        on-first-selected-row-changed="[[$listeners.tableFirstSelectedRow2]]">
+      </oj-table>
+    </div>
+  </div>
+  <div slot="footer">
+    <oj-button class="oj-button-sm" chroming="callToAction" label="Close" on-oj-action="[[$listeners.buttonAction13]]">
+      <span class="oj-ux-ico-close"></span>
+    </oj-button>
+  </div>
+</oj-dialog>
+
+<oj-dialog id="searchDailog_like_Taskname" style="height:500px">
+  <div slot="body">
+    <div class="oj-flex">
+      <oj-form-layout columns="1" label-edge="top">
+        <oj-input-text style="width:20vw" label-hint="Task Name" value="{{ $variables.createobj.task_name }}">
+          <oj-button slot="end" class="oj-button-sm" chroming="borderless" on-oj-action="[[$listeners.buttonAction16]]">
+            <span class="oj-ux-ico-search" style="font-size:18px;cursor:pointer" ></span>
+          </oj-button>
+        </oj-input-text>
+      </oj-form-layout>
+    </div>
+    <div class="oj-flex">
+      <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12" style="height:200px;width:200px"
+        columns-default.resizable="enabled" selection-mode.row="single" data="[[ $variables.TaskADP ]]"
+        columns='[{"headerText":"TaskName","field":"TaskName"}]'
+        on-first-selected-row-changed="[[$listeners.tableFirstSelectedRow3]]">
+      </oj-table>
+    </div>
+  </div>
+  <div slot="footer">
+    <oj-button class="oj-button-sm" chroming="callToAction" label="Close" on-oj-action="[[$listeners.buttonAction15]]">
+      <span class="oj-ux-ico-close"></span>
+    </oj-button>
+  </div>
+</oj-dialog>
+
+<oj-dialog dialog-title="" id="loadingDialog" class="myloader" style="width: 350px;height:150px;">
+  <div slot="body">
+    <div class="oj-flex-item">
+      <span style="font-size:20px;color:#006AA2;font-weight:600;">Loading .....</span>
+      <br />
+      <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+    </div>
+  </div>
+</oj-dialog>

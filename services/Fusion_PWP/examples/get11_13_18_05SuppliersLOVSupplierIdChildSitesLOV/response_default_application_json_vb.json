@@ -1,0 +1,130 @@
+{
+    "items": [
+        {
+            "SupplierSiteId": 300001691975976,
+            "SupplierSite": "Northbrook",
+            "AlternateSiteName": null,
+            "ProcurementBUId": 300000046987012,
+            "ProcurementBU": "US1 Business Unit",
+            "SupplierAddressName": "Northbrook",
+            "SupplierAddressId": 300001372759889,
+            "FormattedAddress": "3100 Straight Road,Ste 116,NORTHBROOK, IL 60062 COOK,UNITED STATES",
+            "Status": "ACTIVE",
+            "InvoiceCurrencyCode": null,
+            "SitePurposeSourcingOnlyFlag": false,
+            "SitePurposePurchasingFlag": true,
+            "SitePurposeProcurementCardFlag": false,
+            "SitePurposePayFlag": false,
+            "SitePurposePrimaryPayFlag": false,
+            "CreateDebitMemoFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/suppliersLOV/300001372225293/child/sitesLOV/300001691975976",
+                    "name": "sitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/suppliersLOV/300001372225293/child/sitesLOV/300001691975976",
+                    "name": "sitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/suppliersLOV/300001372225293",
+                    "name": "suppliersLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "SupplierSiteId": 300001375657182,
+            "SupplierSite": "Site1",
+            "AlternateSiteName": null,
+            "ProcurementBUId": 300000347908106,
+            "ProcurementBU": "112BU",
+            "SupplierAddressName": "Northbrook",
+            "SupplierAddressId": 300001372759889,
+            "FormattedAddress": "3100 Straight Road,Ste 116,NORTHBROOK, IL 60062 COOK,UNITED STATES",
+            "Status": "ACTIVE",
+            "InvoiceCurrencyCode": null,
+            "SitePurposeSourcingOnlyFlag": null,
+            "SitePurposePurchasingFlag": null,
+            "SitePurposeProcurementCardFlag": null,
+            "SitePurposePayFlag": true,
+            "SitePurposePrimaryPayFlag": null,
+            "CreateDebitMemoFlag": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/suppliersLOV/300001372225293/child/sitesLOV/300001375657182",
+                    "name": "sitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/suppliersLOV/300001372225293/child/sitesLOV/300001375657182",
+                    "name": "sitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/suppliersLOV/300001372225293",
+                    "name": "suppliersLOV",
+                    "kind": "item"
+                }
+            ]
+        },
+        {
+            "SupplierSiteId": 300001691941890,
+            "SupplierSite": "Northbrook",
+            "AlternateSiteName": null,
+            "ProcurementBUId": 300001690071768,
+            "ProcurementBU": "MMX India Business Unit",
+            "SupplierAddressName": "Northbrook",
+            "SupplierAddressId": 300001372759889,
+            "FormattedAddress": "3100 Straight Road,Ste 116,NORTHBROOK, IL 60062 COOK,UNITED STATES",
+            "Status": "ACTIVE",
+            "InvoiceCurrencyCode": null,
+            "SitePurposeSourcingOnlyFlag": false,
+            "SitePurposePurchasingFlag": false,
+            "SitePurposeProcurementCardFlag": false,
+            "SitePurposePayFlag": true,
+            "SitePurposePrimaryPayFlag": null,
+            "CreateDebitMemoFlag": false,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/suppliersLOV/300001372225293/child/sitesLOV/300001691941890",
+                    "name": "sitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/suppliersLOV/300001372225293/child/sitesLOV/300001691941890",
+                    "name": "sitesLOV",
+                    "kind": "item"
+                },
+                {
+                    "rel": "parent",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/suppliersLOV/300001372225293",
+                    "name": "suppliersLOV",
+                    "kind": "item"
+                }
+            ]
+        }
+    ],
+    "count": 3,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/suppliersLOV/300001372225293/child/sitesLOV",
+            "name": "sitesLOV",
+            "kind": "collection"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ $application.variables.illustrationBackground ]]"
+  illustration-foreground="[[ $application.variables.illustrationForeground ]]" display-options.responsive-padding="on"
+  page-title="Analytics" background-color="dark-pebble">
+  <div class="oj-panel" style="margin-top:-40px" >
+    <oj-form-layout columns="4" max-columns="4" label-edge="top">
+      <oj-select-single label-hint="Project" data="[[$variables.getPWPPROJECTSLOVListSDP]]" item-text="project_name"
+          value="{{ $variables.analyticsHeaders.projectName }}"></oj-select-single>
+      <oj-select-single label-hint="Supplier" value="{{ $variables.analyticsHeaders.supplierName }}"
+          data="[[$variables.getPWPSUPPLIERLOVListSDP]]" item-text="vendor_name"></oj-select-single>
+      <div style="margin-top:20px">
+        <oj-button label="Search" chroming="callToAction" class="oj-button-sm"  on-oj-action="[[$listeners.buttonAction]]">  <span class="oj-ux-ico-search" slot="startIcon"></span></oj-button>
+        <oj-button label="Reset" class="oj-button-sm" chroming="callToAction" on-oj-action="[[$listeners.buttonAction2]]">
+            <span class="oj-ux-ico-refresh" slot="startIcon"></span>
+        </oj-button>
+      </div>
+
+    </oj-form-layout>
+    <oj-collapsible title="Metrics and Aging">
+      <div class="oj-flex">
+        <!-- <div class="oj-flex-item oj-sm-0.2 "></div> -->
+        <div class="oj-flex-item oj-sm-5 oj-panel">
+          <h4>Metrics</h4>
+          <oj-chart type="bar" class="oj-sm-flex-initial" style=" padding:0 5px; height:35vh;"
+            style-defaults.three-d-effect="on" data="[[ $variables.chartADP ]]" animation-on-data-change="auto"
+            animation-on-display="auto" style-defaults.bar-gap-ratio="0.01" legend.title="Metrics" hover-behavior="dim">
+            <template slot="itemTemplate" data-oj-as="item">
+              <oj-chart-item value="[[ item.data.value ]]" group-id="[[ [item.data.group] ]]"
+                series-id="[[ item.data.series ]]"
+                short-desc="[[ 'Metric: ' + item.data.group + '\nValue: ' + item.data.value + '\nNotes: ' + item.data.notes ]]">
+              </oj-chart-item>
+            </template>
+            <template slot="seriesTemplate" data-oj-as="series">
+              <oj-chart-series 
+              color="[[ 
+              series.id === 'Total Subcontractor invoices awaiting owner payment' ? '#F44336' :   /* Red */
+               series.id === 'Owner payments received this month' ? '#2196F3' :   /* Blue */
+              series.id === 'Subcontractor payments released this month (PWP)' ? '#4CAF50' :   /* Green */
+             series.id === 'Current cash tied up in PWP hold' ? '#FF9800' :   /* Orange */
+             null
+     ]]" border-color="#000">
+              </oj-chart-series>
+            </template>
+          </oj-chart>
+        </div>
+        <div class="oj-flex-item oj-sm-5 oj-panel" style="margin-left:10px">
+          <h4>Aging</h4>
+          <oj-chart type="bar" class="oj-sm-flex-initial" style="padding:0 5px;height:35vh;" animation-on-display="auto"
+            style-defaults.three-d-effect="on" data="[[ $variables.agingChartADP ]]" animation-on-data-change="auto"
+            legend.title="Aging" style-defaults.bar-gap-ratio="0.01" hover-behavior="dim">
+            <template slot="itemTemplate" data-oj-as="item">
+              <oj-chart-item value="[[ item.data.value ]]" group-id="[[ [item.data.group] ]]"
+                series-id="[[ item.data.series ]]"
+                short-desc="[[ 'Aging: ' + item.data.group + '\nAmount Held of Invoices: ' + item.data.value  ]]">
+              </oj-chart-item>
+
+            </template>
+            <template slot="seriesTemplate" data-oj-as="series">
+              <oj-chart-series color="[[ 
+  series.id === '0-15days' ? '#FF5733' :
+  series.id === '16-30days' ? '#2196F3' :
+  series.id === '31-60days' ? '#4CAF50' :
+  series.id === '60+days' ? '#F44336' : null 
+]]" border-color="#000">
+              </oj-chart-series>
+            </template>
+          </oj-chart>
+        </div>
+      </div>
+      <h5 class="oj-header" slot="header">Metrics and Aging</h5>
+    </oj-collapsible>
+    <div>
+ <oj-table scroll-policy="loadMoreOnScroll" style="width:96vw;height:500px"
+      columns='[{"headerText":"Project Name","field":"project_name"},{"headerText":"Supplier Name","field":"supplier_name"},{"headerText":"AR Invoices Amount","field":"owner_paid_to_date"},{"headerText":"AP Invoices Approved","field":"sub_invoices_approved"},{"headerText":"AP Invoices Paid","field":"released_to_subs"},{"headerText":"Pending AP Invoices Amount","field":"still_held"},{"headerText":"Percentage Amount Released","field":"percent_released"}]'
+      data="[[ $variables.analyticsTableADP ]]"></oj-table>
+</div>
+  </div>
+
+</oj-sp-welcome-page>

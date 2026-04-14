@@ -1,0 +1,140 @@
+<oj-sp-welcome-page id="oj-sp-wp1" page-title="Unmatched Invoices"
+  illustration-background="[[ $variables.illustrationBackground ]]"
+  illustration-foreground="[[ $variables.illustrationForeground ]]" background-color="dark-pebble">
+
+  <div class="oj-panel " style="margin-top:-48px">
+    <oj-form-layout columns="4" max-columns="4" label-edge="top">
+      <oj-select-single label-hint="Project" value="{{ $variables.headers.project }}"
+        data="[[$variables.getPWPPROJECTNUMBERSListSDP]]" item-text="project_number"
+        on-value-item-changed="[[$listeners.selectValueItem4]]"></oj-select-single>
+
+      <oj-select-single label-hint="Task Name" value="{{ $variables.headers.taskName }}" item-text="task_name"
+        data="[[ $variables.taskNameADP ]]"></oj-select-single>
+
+      <oj-select-single label-hint="Supplier" item-text="supplier_name"
+        data="[[$variables.getPWPSupplierDetailsListSDP]]" value="{{ $variables.headers.supplier }}">
+      </oj-select-single>
+    </oj-form-layout>
+
+    <!-- <oj-toolbar style="margin-top:15px"> -->
+    <div class="oj-helper-text-align-end">
+      <oj-button label="Search" chroming="callToAction" class="oj-button-sm" style="margin-left:2px"
+        on-oj-action="[[$listeners.buttonAction4]]">
+        <span class="oj-ux-ico-search" slot="startIcon"></span>
+      </oj-button>
+      <oj-button style="margin-left:2px" label="Reset" chroming="callToAction"
+        on-oj-action="[[$listeners.buttonAction2]]" class="oj-button-sm">
+        <span class="oj-ux-ico-refresh" slot="startIcon"></span>
+      </oj-button>
+      <oj-button style="margin-left:2px" label="Save" chroming="callToAction" class="oj-button-sm"
+        on-oj-action="[[$listeners.buttonAction5]]">
+        <span class="oj-ux-ico-save" slot="startIcon"></span>
+      </oj-button>
+
+      <oj-switch label-hint="Enable Trace" value="[[$application.variables.enableTrace]]" style="margin-top:-12px"
+        on-value-changed="[[$listeners.switchValue]]"></oj-switch>
+
+      <b>  <oj-bind-text
+                    value='[[ $application.variables.traceIdDisplay ? "Trace ID:" + $application.variables.traceIdDisplay : "Trace ID" ]]'></oj-bind-text></b>
+      <!-- <oj-button style="margin-left:2px" label="Release" chroming="danger" on-oj-action="[[$listeners.buttonAction3]]"
+                  class="oj-button-sm">
+                </oj-button> -->
+      <!-- </div> -->
+      <!-- </oj-toolbar> -->
+
+      <!-- <oj-form-layout columns="2">
+          <div >
+                <oj-button label="Search" chroming="callToAction" class="oj-button-sm" style="margin-left:2%"
+              on-oj-action="[[$listeners.buttonAction4]]">   
+               <span class="oj-ux-ico-search" slot="startIcon"></span>        
+            </oj-button>
+            <oj-button style="margin-left:2%" label="Refresh" chroming="callToAction" on-oj-action="[[$listeners.buttonAction2]]"
+              class="oj-button-sm">        
+            <span class="oj-ux-ico-refresh" slot="startIcon"></span>
+            </oj-button>
+
+            <oj-button style="margin-left:2%" label="Release" chroming="danger" 
+            on-oj-action="[[$listeners.buttonAction3]]"
+              class="oj-button-sm">
+            </oj-button>
+          </div>
+        </oj-form-layout> -->
+      <!-- <div style="display:flex" class="oj-helper-justify-content-flex-end" > -->
+      <!-- added trace id logic for debugging mechaism -->
+      <!-- <div> -->
+
+      <!-- </div> -->
+
+      <!-- <div style="margin-top:15px;margin-left:10px"> -->
+      <!-- <oj-label>Trace ID:</oj-label> -->
+
+    </div>
+
+    <!-- </div> -->
+    <!-- </div> -->
+
+
+    <div>
+      <oj-table scroll-policy="loadMoreOnScroll" columns-default.resizable="enabled" selection-mode.row="multiple"
+        style="width:92vw;height:60vh" display="grid"
+        columns='[{"headerText":"Project Number","field":"project_number","resizable":"enabled","className":"dcols","width":"150"},{"headerText":"Supplier Name","field":"vendor_name","resizable":"enabled","className":"dcols","width":"150"},{"headerText":"AP Invoice","field":"invoice_number","resizable":"enabled","className":"dcols","width":"150"},{"headerText":"AP Invoice Amount","field":"invoice_amount","resizable":"enabled","className":"dcols","width":"150"},{"headerText":"AP Invoice Date","field":"invoice_creation_date","resizable":"enabled","className":"dcols","template":"APINVDATE"},{"headerText":"Hold Date","field":"hold_date","resizable":"enabled","className":"dcols","width":"150","template":"ApInvDate"},{"headerText":"AR Invoice Number","field":"ar_invoice_number","template":"arInvNumDrp","resizable":"enabled","className":"ecols","width":"150"},{"headerText":"AR Invoice Amount","field":"ar_invoice_amount","resizable":"enabled","className":"dcols","template":"ARinvAmt","width":"150"},{"headerText":"Customer Name","field":"customer_name","template":"custName","resizable":"enabled","className":"dcols","width":"150"},{"headerText":"Lag Days","field":"lag_days","resizable":"enabled","className":"dcols"},{"headerText":"Hold Release Date","field":"hold_release_date","template":"ApInvDate","resizable":"enabled","className":"dcols","width":"150"}]'
+        on-selected-changed="[[$listeners.tableSelected2]]" edit-mode="rowEdit" data="[[ $variables.UnmatchedDataADP ]]"
+        on-oj-before-row-edit="[[$listeners.tableBeforeRowEdit]]"
+        on-oj-before-row-edit-end="[[$listeners.tableBeforeRowEditEnd]]"
+        selected.row="{{ $variables.selectedrowDetails }}">
+
+        <template slot="APINVDATE">
+          <oj-bind-text value="[[ $application.functions.formatTo_DD_MON_YYYY_apInvDate($current.data) ]]">
+          </oj-bind-text>
+        </template>
+        <template slot="ApInvDate">
+          <oj-bind-text value="[[ $application.functions.formatTo_DD_MON_YYYY($current.data) ]]"></oj-bind-text>
+        </template>
+
+        <template slot="arInvNumDrp">
+          <oj-bind-if test='[[$current.mode=="navigation"]]'>
+            <oj-bind-text value="[[$current.data]]"></oj-bind-text>
+            <!-- <oj-select-single   value="[[$current.data]]"></oj-select-single> -->
+          </oj-bind-if>
+          <oj-bind-if test='[[$current.mode=="edit"]]'>
+            <oj-select-single id="ARinvNum" value="{{ $variables.unmatchedInvCurrentData.ar_invoice_number }}"
+              item-text="ar_invoice_number" data="[[$variables.getPWPUnmatchedARInvoicesListSDP2]]"
+              on-value-item-changed="[[$listeners.aRinvNumValueItem]]">
+            </oj-select-single>
+          </oj-bind-if>
+        </template>
+
+        <template slot="custName">
+          <!-- <oj-bind-if test='[[$current.mode=="navigation"]]'> -->
+          <oj-bind-text value="[[ $current.row.ar_invoice_number ? $current.data:'' ]]"></oj-bind-text>
+
+          <!-- </oj-bind-if> -->
+        </template>
+
+        <template slot="ARinvAmt">
+          <oj-bind-if test='[[$current.mode=="navigation"]]'>
+            <oj-bind-text value="[[$current.row.ar_invoice_number ? $current.data:'']]"></oj-bind-text>
+
+          </oj-bind-if>
+
+        </template>
+      </oj-table>
+    </div>
+    <!-- </div> -->
+
+    <oj-dialog dialog-title="" id="loadingDialog" class="myloader" style="width: 350px">
+      <div slot="body">
+        <div class="oj-flex-item">
+          <span style="font-size:20px;color:#006AA2;font-weight:600;margin-top:-2vh">Loading .....</span>
+          <br />
+          <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+        </div>
+      </div>
+    </oj-dialog>
+  </div>
+</oj-sp-welcome-page>
+
+<!-- {"headerText":"AR Invoice","field":"ar_invoice"},
+  {"headerText":"Customer Name","field":"customer_name"},
+   {"headerText":"AR Invoice Amount","field":"ar_invoice_amount"},
+  {"headerText":"Receipt Number","field":"receipt_number"} -->

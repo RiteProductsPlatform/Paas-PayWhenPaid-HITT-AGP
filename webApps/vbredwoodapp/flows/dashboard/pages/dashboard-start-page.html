@@ -1,0 +1,205 @@
+
+
+<oj-sp-welcome-page id="oj-sp-wp1" illustration-background="[[ $application.variables.illustrationBackground ]]"
+  illustration-foreground="[[ $application.variables.illustrationForeground ]]" display-options.responsive-padding="on"
+  page-title="Reports" background-color="dark-pebble">
+
+<div class="oj-panel" style="margin-top:-50px;height:850px; overflow-y:auto; overflow-x:hidden;">
+  <div class="oj-flex">
+    <div class="oj-flex-item oj-sm-1"></div>
+    <div class="oj-flex-item oj-sm-10">
+      <div class="alerts-card">
+        <div class="alerts-header">
+          <span class="alerts-icon">⚠️</span>
+          <span class="alerts-title">Critical Alerts</span>
+        </div>
+        <div class="alert-item alert-red">
+          <div class="alert-head">
+            <span class="alert-icon">❌</span>
+            <span class="alert-title">5 invoices &gt; 60 days</span>
+          </div>
+          <div class="alert-sub">on PWP hold</div>
+        </div>
+        <div class="alert-item alert-red">
+          <div class="alert-head">
+            <span class="alert-icon">❌</span>
+            <span class="alert-title">SteelFab threatening lien</span>
+          </div>
+          <div class="alert-sub">78 days waiting</div>
+        </div>
+        <div class="alert-item alert-green">
+          <div class="alert-head">
+            <span class="alert-icon">✔️</span>
+            <span class="alert-title">Other projects on track</span>
+          </div>
+          <div class="alert-sub">No issues</div>
+        </div>
+      </div>
+    </div>
+    <div class="oj-flex-item oj-sm-1"></div>
+  </div>
+
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-1"></div>
+  <div class="oj-flex-item oj-sm-5 oj-panel">
+    <div><h5>Paid-When-Paid Flow ( Last 6 Months)</h5></div>
+
+     <oj-chart id="barChart" type="bar" orientation="vertical" data="[[$variables.chartADP]]"
+       animation-on-display="auto" animation-on-data-change="auto" hover-behavior="dim" legend.position="bottom">
+              <template slot="itemTemplate" data-oj-as="item">
+                <oj-chart-item
+                  value="[[item.data.value]]"
+                  group-id="[[ [item.data.group] ]]"
+                  series-id="[[item.data.series]]"></oj-chart-item>
+              </template>
+            </oj-chart>
+
+
+  </div>
+
+  <div class="oj-flex-item oj-sm-5 oj-panel">
+    <div><h5>Aging of PWP Hold Invocies</h5></div>
+
+ <oj-chart
+              id="barChart"
+              type="bar"
+              orientation="horizontal"
+              stack="off"
+              data="[[$variables.chartADP1]]"
+              animation-on-display="auto"
+              animation-on-data-change="auto"
+              hover-behavior="dim" legend.rendered="off">
+              <template slot="itemTemplate" data-oj-as="item">
+                <oj-chart-item
+                  value="[[item.data.value]]"
+                  group-id="[[ [item.data.group] ]]"
+                  series-id="[[item.data.series]]"></oj-chart-item>
+              </template>
+            </oj-chart>
+
+    
+  </div>
+  <div class="oj-flex-item oj-sm-1"></div>
+</div>
+
+
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-1"></div>
+  <div class="oj-flex-item oj-sm-10">
+    <div><h5>Top Subcontractors on PWP Hold</h5></div>
+     <oj-table scroll-policy="loadMoreOnScroll" display="grid" data="[[ $variables.dataADP ]]" style="width:100%"
+       columns='[{"headerText":"Subcontractor","field":"name"},{"headerText":"Amount Held","field":"amountHeld","width":150,"className":"right"},{"headerText":"Days Waiting","field":"daysWaiting","template":"showTemplate","width":250,"className":"center"},{"headerText":"Status","field":"status","template":"status","width":250,"className":"center"}]'>
+          
+           <template slot="showTemplate">
+            <span :class="[[$functions.getColour($current.data)]]"><oj-bind-text value='[[$current.data + " days"]]'></oj-bind-text></span>
+            
+            </template>
+
+             <template slot="status">
+            <span :class="[[$functions.getColour1($current.data)]]"><oj-bind-text value='[[$current.data]]'></oj-bind-text></span>
+            
+            </template>
+
+          
+          
+          
+          </oj-table>
+
+
+
+  </div>
+  <div class="oj-flex-item oj-sm-1"></div>
+</div>
+
+
+<div class="oj-flex">
+   <div class="oj-flex-item oj-sm-1"></div>
+  <div class="oj-flex-item oj-sm-10">
+    <div><h5>Project-Level PWP Tracker</h5></div>
+     <oj-table scroll-policy="loadMoreOnScroll" display="grid" data="[[ $variables.trackerADP ]]"
+            style="width:100%" columns='[
+            
+            
+       { "headerText": "Project Name", "field": "projectName" },
+  { "headerText": "Owner Paid", "field": "ownerPaid","className":"right" },
+  { "headerText": "Sub Approved", "field": "subApproved","className":"right" },
+  { "headerText": "Released to Subs", "field": "releasedToSubs","template":"greentemp","className":"right" },
+  { "headerText": "Still Held", "field": "stillHeld","template":"redtemp","className":"right" },
+  { "headerText": "% Released", "field": "percentReleased","template":"gaguage" }  
+          ]'>
+
+          <template slot="greentemp">
+            <span class="gbold"><oj-bind-text value="[[$current.data]]"></oj-bind-text></span>
+          </template>
+          <template slot="redtemp">
+            <span class="rbold"><oj-bind-text value="[[$current.data]]"></oj-bind-text></span>
+          </template>
+          
+           <template slot="gaguage">
+            <span>
+  <oj-status-meter-gauge value='[[typeof $current.data === "number" ? $current.data : null]]' metric-label.rendered="on"
+    plot-area.rendered="on" class="oj-sm-flex-initial" size="sm" style="display:inline-flex" min="0" max="100"
+    color="[[$functions.getColour2($current.data)]]"
+    >    
+    </oj-status-meter-gauge> <oj-bind-text value='[[$current.data + " %"]]'></oj-bind-text></span>
+
+    </template>
+   </oj-table>
+  </div>
+   <div class="oj-flex-item oj-sm-1"></div>
+</div>
+
+
+<div class="oj-flex">
+    <div class="oj-flex-item oj-sm-1"></div>
+  <div class="oj-flex-item oj-sm-10">
+    <div><h5>Forecast: Upcoming PWP Releases(Next 30 Days)</h5></div>
+     <oj-table scroll-policy="loadMoreOnScroll" display="grid" data="[[ $variables.releaseADP ]]"
+            style="width:100%" columns='[
+            
+            
+       { "headerText": "Expected Owner Payment", "field": "expectedOwnerPayment" },
+  { "headerText": "Owner Amount", "field": "ownerAmount","template":"bluetemp","className":"right" },
+  { "headerText": "Sub Release", "field": "subRelease","template":"greentemp","className":"right" },
+  { "headerText": "Key Subs", "field": "keySubs" }
+
+
+
+          ]'>
+
+           <template slot="bluetemp">
+            <span class="bbold"><oj-bind-text value="[[$current.data]]"></oj-bind-text></span>
+          </template>
+          
+          
+          
+ <template slot="greentemp">
+            <span class="gbold"><oj-bind-text value="[[$current.data]]"></oj-bind-text></span>
+          </template>
+          
+          
+          
+          </oj-table>
+          
+         - <table style="width:87%">
+            <tr>
+              <td>Total (30 days)</td>
+              <td class='bbold' style="text-align:right;width:30%">$3,050,000</td>
+              <td class='gbold' style="text-align:right;position:relative;right:60px">$2,520,000</td>
+              <td></td>
+            </tr>
+          </table> 
+
+
+
+  </div>
+    <div class="oj-flex-item oj-sm-1"></div>
+</div>
+
+
+
+
+
+</div>
+
+</oj-sp-welcome-page>

@@ -1,0 +1,42 @@
+{
+    "items": [
+        {
+            "metric": "Total Subcontractor invoices awaiting owner payment",
+            "value_example": 1220923.68,
+            "notes": "All approved sub invoices not yet payable under PWP"
+        },
+        {
+            "metric": "Owner payments received this month",
+            "value_example": 732781.13,
+            "notes": "Triggers for releasing PWP holds"
+        },
+        {
+            "metric": "Subcontractor payments released this month (PWP)",
+            "value_example": 484636.05,
+            "notes": "Paid only after owner paid GC"
+        },
+        {
+            "metric": "Current cash tied up in PWP hold",
+            "value_example": 1220923.68,
+            "notes": "Money you owe subs but can’t pay yet"
+        }
+    ],
+    "hasMore": false,
+    "limit": 50,
+    "offset": 0,
+    "count": 4,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/pwp/PWP_ANALYTICS_PAGE"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/pwp/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/pwp/PWP_ANALYTICS_PAGE"
+        }
+    ]
+}

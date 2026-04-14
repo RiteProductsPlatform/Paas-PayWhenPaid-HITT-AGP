@@ -1,0 +1,42 @@
+{
+    "DATA_DS": {
+        "G_1": [
+            {
+                "name": "1001 General Contractor"
+            },
+            {
+                "name": "1002 - Project Scheduling OT"
+            },
+            {
+                "name": "1002 Project Scheduling"
+            },
+            {
+                "name": "1003 - Engineering Services"
+            },
+            {
+                "name": "1003 - Engineering Services OT"
+            },
+            {
+                "name": "1004 - Site Services"
+            },
+            {
+                "name": "1005 Traffic Controls"
+            },
+            {
+                "name": "1006 Permitting"
+            },
+            {
+                "name": "1007 Allowances"
+            },
+            {
+                "name": "1008 Contingencies"
+            },
+            {
+                "name": "EXP-TYPE-CUR"
+            },
+            {
+                "name": "PER DIEM LODGING"
+            }
+        ]
+    }
+}

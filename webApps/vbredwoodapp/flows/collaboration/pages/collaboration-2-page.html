@@ -1,0 +1,64 @@
+<oj-sp-welcome-page id="oj-sp-wp1" page-title="PWP- Workbench"
+  illustration-background="[[ $variables.illustrationBackground ]]"
+  illustration-foreground="[[ $variables.illustrationForeground ]]" background-color="dark-pebble">
+
+  <div class="oj-panel" style="margin-top:-48px">
+    <oj-form-layout columns="5" max-columns="5" label-edge="top">
+      <oj-select-single label-hint="AP Invoice" item-text="ap_invoice"
+        on-value-item-changed="[[$listeners.selectValueItem]]" value="{{ $variables.headers.apInvoice }}"
+        data="[[$variables.getPWPAPInvoiceNumbersListSDP]]"></oj-select-single>
+      <oj-select-single label-hint="Supplier" item-text="supplier_name"
+        on-value-item-changed="[[$listeners.selectValueItem2]]" value="{{ $variables.headers.supplier }}"
+        data="[[$variables.getPWPSupplierDetailsListSDP]]"></oj-select-single>
+      <oj-select-single label-hint="Project" item-text="project_number"
+        on-value-item-changed="[[$listeners.selectValueItem3]]" value="{{ $variables.headers.project }}"
+        data="[[$variables.getPWPProjectNumbersListSDP]]"></oj-select-single>
+      <oj-select-single label-hint="Hold Active" data="[[ $application.variables.YesNoADP ]]" item-text="LookupCode"
+        value="{{ $variables.headers.hold_active }}"></oj-select-single>
+    </oj-form-layout>
+    <div class="oj-helper-text-align-end">
+      <oj-button label="Search" chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction]]">
+        <span class="oj-ux-ico-search" slot="startIcon"></span>
+      </oj-button>
+      <oj-button label="Reset" chroming="callToAction" on-oj-action="[[$listeners.buttonAction2]]" class="oj-button-sm">
+        <span class="oj-ux-ico-refresh" slot="startIcon"></span>
+      </oj-button>
+      <oj-button label="Release" on-oj-action="[[$listeners.buttonAction3]]" chroming="danger" class="oj-button-sm">
+      </oj-button>
+      <oj-button chroming="callToAction" class="oj-button-sm" on-oj-action="[[$listeners.buttonAction4]]"
+        label="Export">
+        <span class="oj-ux-ico-upload" slot="startIcon"></span>
+      </oj-button>
+      <oj-switch label-hint="Enable Trace" value="[[$application.variables.enableTrace]]" style="margin-top:-12px"
+        on-value-changed="[[$listeners.switchValue3]]"></oj-switch>
+      <b><oj-bind-text
+             value='[[ $application.variables.traceIdDisplay ? "Trace ID:" + $application.variables.traceIdDisplay : "Trace ID" ]]'></oj-bind-text></b>
+    </div>
+     <div>
+    <oj-table scroll-policy="loadMoreOnScroll" columns-default.resizable="enabled" selection-mode.row="multiple"
+      style="width:93vw;height:60vh" display="grid" on-selected-changed="[[$listeners.tableSelected]]"
+      data="[[ $variables.collabration2ADP ]]"
+      columns='[{"headerText":"Project Number","field":"project_number","width":"150"},{"headerText":"Supplier Name","field":"vendor_name","width":"150"},{"headerText":"AP Invoice","field":"invoice_number","width":"150"},{"headerText":"AP Invoice Date","field":"invoice_creation_date","template":"INVCreationdate","width":"150"},{"headerText":"AP Invoice Amount","field":"invoice_amount"},{"headerText":"Hold Date","field":"hold_date","template":"ApInvDate","width":"150"},{"headerText":"Hold Release Date","field":"hold_release_date","template":"ApInvDate","width":"150"},{"headerText":"AR Invoice Number","field":"ar_invoice_number","width":"150"},{"headerText":"AR Invoice Amount","field":"ar_invoice_amount","width":"150"},{"headerText":"Customer Name","field":"customer_name","width":"150"},{"headerText":"AR Receipt Number","field":"ar_receipt_number","width":"150"},{"headerText":"AR Invoice Dueamount","field":"ar_invoice_dueamount","width":"150"},{"headerText":"PO Number","field":"po_number","width":"150"},{"headerText":"PO Receipt Number","field":"po_receipt_number","width":"150"},{"headerText":"Hold Status","field":"invoice_hold_applied"},{"headerText":"Currency Code","field":"invoice_currency_code"},{"headerText":"Lag Days","field":"lag_days"}]'
+      selected.row="{{ $variables.selectedrowDetails }}">
+
+      <template slot="INVCreationdate">
+        <oj-bind-text value="[[ $application.functions.formatTo_DD_MON_YYYY_apInvDate($current.data) ]]"></oj-bind-text>
+      </template>
+
+      <template slot="ApInvDate">
+        <oj-bind-text value="[[ $application.functions.formatTo_DD_MON_YYYY($current.data) ]]"></oj-bind-text>
+      </template>
+    </oj-table>
+  </div>
+  </div>
+  <oj-dialog dialog-title="" id="loadingDialog" class="myloader" style="width: 350px">
+    <div slot="body">
+      <div class="oj-flex-item">
+        <span style="font-size:20px;color:#006AA2;font-weight:600;margin-top:-2vh">Loading .....</span>
+        <br />
+        <oj-progress-bar value="-1" class="oj-sm-margin-3x-top"></oj-progress-bar>
+      </div>
+    </div>
+  </oj-dialog>
+
+</oj-sp-welcome-page>

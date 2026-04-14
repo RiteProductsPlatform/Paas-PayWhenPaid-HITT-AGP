@@ -1,0 +1,176 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "getPWPDebugSessionIDListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "PWP_ORDS/getPWP_Debug_SessionID",
+        "keyAttributes": "session_id",
+        "itemsPath": "items",
+        "responseType": "getPWPDebugSessionIDResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "session_id"
+          ]
+        }
+      }
+    },
+    "getPWPDebugUserIDListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "PWP_ORDS/getPWP_Debug_UserID",
+        "keyAttributes": "user_id",
+        "itemsPath": "items",
+        "responseType": "getPWPDebugUserIDResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "user_id"
+          ]
+        }
+      }
+    },
+    "headers": {
+      "type": {
+        "endDate": "any",
+        "startDate": "any",
+        "traceID": "any",
+        "username": "any"
+      }
+    },
+    "logData": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getPWP_DebugLogs"
+      }
+    }
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getPWP_DebugLogs": {
+      "endpoint": "getPWP_DebugLogs",
+      "service": "PWP_ORDS",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getPWPDebugSessionIDResponse": {
+      "endpoint": "getPWP_Debug_SessionID",
+      "service": "PWP_ORDS",
+      "path": "response"
+    },
+    "@decorators.getPWPDebugUserIDResponse": {
+      "endpoint": "getPWP_Debug_UserID",
+      "service": "PWP_ORDS",
+      "path": "response"
+    },
+    "getPWP_DebugLogs": {
+      "api_name": "string",
+      "application_name": "string",
+      "created_by": "string",
+      "creation_date": "string",
+      "creationdatewithtimestamp": "string",
+      "debug_message": "string",
+      "environment": "any",
+      "error_code": "any",
+      "error_details": "string",
+      "host_name": "any",
+      "last_update_date": "string",
+      "last_updated_by": "string",
+      "level_id": "any",
+      "page_name": "string",
+      "procedure_name": "string",
+      "record_source": "any",
+      "request_id": "any",
+      "sequence_id": "number",
+      "session_id": "string",
+      "severity_level": "string",
+      "user_id": "string"
+    },
+    "getPWPDebugSessionIDResponse": {
+      "items": [
+        {
+          "session_id": "string"
+        }
+      ]
+    },
+    "getPWPDebugUserIDResponse": {
+      "items": [
+        {
+          "user_id": "string"
+        }
+      ]
+    }
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}"
+          }
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "ButtonActionChain1",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}"
+          }
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "exportButtonActionChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain",
+          "parameters": {
+            "event": "{{$event}}"
+          }
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-date": {
+        "path": "ojs/ojdatetimepicker"
+      },
+      "oj-progress-bar": {
+        "path": "ojs/ojprogress-bar"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      }
+    }
+  }
+}

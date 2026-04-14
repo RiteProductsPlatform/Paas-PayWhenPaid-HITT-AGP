@@ -1,0 +1,421 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "agingArray": {
+      "type": "object[]"
+    },
+    "agingChartADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.agingArray }}"
+      }
+    },
+    "analyticsHeaders": {
+      "type": {
+        "projectName": "any",
+        "supplierName": "any"
+      }
+    },
+    "analyticsTableADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "getPWP_ANALYTICS_SEARCH"
+      }
+    },
+    "chartADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "data": "{{ $variables.chartArray }}"
+      }
+    },
+    "chartArray": {
+      "type": "object[]"
+    },
+    "getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "OIC_Projects/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0Getprojects",
+        "keyAttributes": "PROJECT_NAME",
+        "itemsPath": "DATA_DS.G_1",
+        "responseType": "getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "PROJECT_NAME"
+          ]
+        },
+        "uriParameters": {
+          "p_username": "{{ $application.variables.user }}"
+        }
+      }
+    },
+    "getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "OIC_Projects/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0Getprojects",
+        "keyAttributes": "NAME",
+        "itemsPath": "DATA_DS.G_1",
+        "responseType": "getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsResponse2",
+        "uriParameters": {
+          "p_username": "{{ $application.variables.user }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "NAME"
+          ]
+        }
+      }
+    },
+    "getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "OIC_Projects/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0Getprojects",
+        "keyAttributes": "name",
+        "itemsPath": "DATA_DS.G_1",
+        "responseType": "getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsResponse3",
+        "uriParameters": {
+          "p_username": "{{ $application.variables.user }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        }
+      }
+    },
+    "getOrdsTimeritePWPPRACTICEPwpTrackerListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "PWP_AnylyticsTable/getOrdsTimeritePWP_PRACTICEPwp_tracker",
+        "keyAttributes": "project_id",
+        "itemsPath": "items",
+        "responseType": "getOrdsTimeritePWPPRACTICEPwpTrackerResponse"
+      }
+    },
+    "getOrdsTimeritePWPPRACTICEPwpTrackerListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "PWP_AnylyticsTable/getOrdsTimeritePWP_PRACTICEPwp_tracker",
+        "keyAttributes": "project_id",
+        "itemsPath": "items",
+        "responseType": "getOrdsTimeritePWPPRACTICEPwpTrackerResponse2"
+      }
+    },
+    "getPWPProjectNumbersListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "PWP_ORDS/getPWP_ProjectNumbers",
+        "keyAttributes": "project_number",
+        "itemsPath": "items",
+        "responseType": "getPWPProjectNumbersResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "project_number"
+          ]
+        }
+      }
+    },
+    "getPWPPROJECTSLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+
+        "keyAttributes": "project_name",
+        "itemsPath": "items",
+        "responseType": "getPWPPROJECTSLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "project_name"
+          ]
+        },
+        "fetchChain": "getPWP_PROJECTSLOVFetch"
+      }
+    },
+    "getPWPSupplierDetailsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "PWP_ORDS/getPWP_SupplierDetails",
+        "keyAttributes": "supplier_name",
+        "itemsPath": "items",
+        "responseType": "getPWPSupplierDetailsResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "supplier_name"
+          ]
+        }
+      }
+    },
+    "getPWPSUPPLIERLOVListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+
+        "keyAttributes": "vendor_name",
+        "itemsPath": "items",
+        "responseType": "getPWPSUPPLIERLOVResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "vendor_name"
+          ]
+        },
+        "fetchChain": "getPWP_SUPPLIERLOVFetch"
+      }
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsResponse": {
+      "endpoint": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0Getprojects",
+      "service": "OIC_Projects",
+      "path": "response"
+    },
+    "@decorators.getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsResponse2": {
+      "endpoint": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0Getprojects",
+      "service": "OIC_Projects",
+      "path": "response"
+    },
+    "@decorators.getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsResponse3": {
+      "endpoint": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0Getprojects",
+      "service": "OIC_Projects",
+      "path": "response"
+    },
+    "@decorators.getOrdsTimeritePWP_PRACTICEPwp_tracker": {
+      "endpoint": "getOrdsTimeritePWP_PRACTICEPwp_tracker",
+      "service": "PWP_AnylyticsTable",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getOrdsTimeritePWPPRACTICEPwpTrackerResponse": {
+      "endpoint": "getOrdsTimeritePWP_PRACTICEPwp_tracker",
+      "service": "PWP_AnylyticsTable",
+      "path": "response"
+    },
+    "@decorators.getOrdsTimeritePWPPRACTICEPwpTrackerResponse2": {
+      "endpoint": "getOrdsTimeritePWP_PRACTICEPwp_tracker",
+      "service": "PWP_AnylyticsTable",
+      "path": "response"
+    },
+    "@decorators.getPWP_ANALYTICS_PAGE": {
+      "endpoint": "getPWP_ANALYTICS_PAGE",
+      "service": "PWP_ORDS",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getPWP_ANALYTICS_SEARCH": {
+      "endpoint": "getPWP_ANALYTICS_SEARCH",
+      "service": "PWP_ORDS",
+      "path": "response-_-items[0]"
+    },
+    "@decorators.getPWPProjectNumbersResponse": {
+      "endpoint": "getPWP_ProjectNumbers",
+      "service": "PWP_ORDS",
+      "path": "response"
+    },
+    "@decorators.getPWPPROJECTSLOVResponse": {
+      "endpoint": "getPWP_PROJECTSLOV",
+      "service": "PWP_ORDS",
+      "path": "response"
+    },
+    "@decorators.getPWPSupplierDetailsResponse": {
+      "endpoint": "getPWP_SupplierDetails",
+      "service": "PWP_ORDS",
+      "path": "response"
+    },
+    "@decorators.getPWPSUPPLIERLOVResponse": {
+      "endpoint": "getPWP_SUPPLIERLOV",
+      "service": "PWP_ORDS",
+      "path": "response"
+    },
+    "getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsResponse": {
+      "DATA_DS": {
+        "G_1": [
+          {
+            "BU_ID": "string",
+            "BU_NAME": "string",
+            "NAME": "string",
+            "PROJECT_ID": "string",
+            "PROJECT_NUMBER": "string",
+            "PROJECT_STATUS_CODE": "string",
+            "PROJECT_NAME": "string"
+
+          }
+        ]
+      }
+    },
+    "getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsResponse2": {
+      "DATA_DS": {
+        "G_1": [
+          {
+            "BU_ID": "string",
+            "BU_name": "string",
+            "name": "string",
+            "PROJECT_ID": "string",
+            "PROJECT_NUMBER": "string",
+            "PROJECT_STATUS_CODE": "string",
+            "BU_NAME": "string",
+            "NAME": "string"
+
+          }
+        ]
+      }
+    },
+    "getIcApiIntegrationV2FlowsRestProjectPAYWHENPAIDPWPPROJECTSYNC1GetprojectsResponse3": {
+      "DATA_DS": {
+        "G_1": [
+          {
+            "BU_ID": "string",
+            "BU_name": "string",
+            "name": "string",
+            "PROJECT_ID": "string",
+            "PROJECT_NUMBER": "string",
+            "PROJECT_STATUS_CODE": "string"
+          }
+        ]
+      }
+    },
+    "getOrdsTimeritePWP_PRACTICEPwp_tracker": {
+      "contract_number": "any",
+      "owner_paid_to_date": "number",
+      "percent_released": "number",
+      "project_id": "number",
+      "project_name": "string",
+      "released_to_subs": "number",
+      "still_held": "number",
+      "sub_invoices_approved": "number",
+      "supplier_name": "string"
+    },
+    "getOrdsTimeritePWPPRACTICEPwpTrackerResponse": {
+      "items": [
+        {
+          "contract_number": "any",
+          "owner_paid_to_date": "number",
+          "percent_released": "number",
+          "project_id": "number",
+          "project_name": "string",
+          "released_to_subs": "number",
+          "sub_invoices_approved": "number",
+          "supplier_name": "string"
+        }
+      ]
+    },
+    "getOrdsTimeritePWPPRACTICEPwpTrackerResponse2": {
+      "items": [
+        {
+          "contract_number": "any",
+          "owner_paid_to_date": "number",
+          "percent_released": "number",
+          "project_id": "number",
+          "project_name": "string",
+          "released_to_subs": "number",
+          "still_held": "number",
+          "sub_invoices_approved": "number",
+          "supplier_name": "string"
+        }
+      ]
+    },
+    "getPWP_ANALYTICS_PAGE": {
+      "metric": "string",
+      "notes": "string",
+      "value_example": "number"
+    },
+    "getPWP_ANALYTICS_SEARCH": {
+      "ap_invoices_approved": "any",
+      "ap_invoices_paid": "any",
+      "ar_invoices_amount": "any",
+      "pending_ap_invoices_amount": "any",
+      "percentage_amount_released": "any",
+      "project_name": "string",
+      "vendor_name": "string"
+    },
+    "getPWPProjectNumbersResponse": {
+      "items": [
+        {
+          "project_number": "string"
+        }
+      ]
+    },
+    "getPWPPROJECTSLOVResponse": {
+      "items": [
+        {
+          "project_name": "string"
+        }
+      ]
+    },
+    "getPWPSupplierDetailsResponse": {
+      "items": [
+        {
+          "supplier_name": "string"
+        }
+      ]
+    },
+    "getPWPSUPPLIERLOVResponse": {
+      "items": [
+        {
+          "vendor_name": "string"
+        }
+      ]
+    }
+
+  },
+  "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "searchAnalyticsButtonActionChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}"
+          }
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "ResetButtonActionChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}"
+          }
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain",
+          "parameters": {
+            "event": "{{$event}}"
+          }
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-chart": {
+        "path": "ojs/ojchart"
+      },
+      "oj-chart-item": {
+        "path": "ojs/ojchart"
+      },
+      "oj-chart-series": {
+        "path": "ojs/ojchart"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-select-single": {
+        "path": "ojs/ojselectsingle"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      }
+
+    }
+  }
+}

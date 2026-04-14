@@ -1,0 +1,222 @@
+{
+    "items": [
+        {
+            "LookupType": "YES_NO",
+            "ViewApplicationId": 3,
+            "ApplicationShortName": "AU",
+            "ApplicationId": 3,
+            "ModuleId": "61ECAF4AAB32E990E040449821C61C97",
+            "Meaning": "Yes or No",
+            "Description": null,
+            "CustomizationLevel": "S",
+            "RestAccessSecured": "AUTH",
+            "CreatedBy": "SEED_DATA_FROM_APPLICATION",
+            "CreationDate": "2013-08-08T06:33:15.542+00:00",
+            "LastUpdateDate": "2025-10-30T11:16:33.768+00:00",
+            "LastUpdateLogin": "-1",
+            "LastUpdatedBy": "SEED_DATA_FROM_APPLICATION",
+            "BossAppPackageName": null,
+            "BossAppPackageVersion": null,
+            "BossModuleName": null,
+            "BossIdentifier": null,
+            "lookupCodes": {
+                "items": [
+                    {
+                        "LookupCode": "N",
+                        "ViewApplicationId": 3,
+                        "Meaning": "No",
+                        "Description": null,
+                        "EnabledFlag": "Y",
+                        "StartDateActive": "0001-01-01",
+                        "EndDateActive": "4712-12-31",
+                        "DisplaySequence": null,
+                        "Tag": null,
+                        "CreatedBy": "SEED_DATA_FROM_APPLICATION",
+                        "CreationDate": "2013-08-08T06:33:15.550+00:00",
+                        "LastUpdateDate": "2025-10-30T11:16:43.605+00:00",
+                        "LastUpdateLogin": "-1",
+                        "LastUpdatedBy": "SEED_DATA_FROM_APPLICATION"
+                    },
+                    {
+                        "LookupCode": "Y",
+                        "ViewApplicationId": 3,
+                        "Meaning": "Yes",
+                        "Description": null,
+                        "EnabledFlag": "Y",
+                        "StartDateActive": "0001-01-01",
+                        "EndDateActive": "4712-12-31",
+                        "DisplaySequence": null,
+                        "Tag": null,
+                        "CreatedBy": "SEED_DATA_FROM_APPLICATION",
+                        "CreationDate": "2013-08-08T06:33:15.555+00:00",
+                        "LastUpdateDate": "2025-10-30T11:16:43.605+00:00",
+                        "LastUpdateLogin": "-1",
+                        "LastUpdatedBy": "SEED_DATA_FROM_APPLICATION"
+                    }
+                ],
+                "count": 2,
+                "hasMore": false,
+                "limit": 25,
+                "offset": 0,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/0002000000065945535F4E4F0000000EACED000577080000000000000003/child/lookupCodes",
+                        "name": "lookupCodes",
+                        "kind": "collection"
+                    }
+                ]
+            }
+        },
+        {
+            "LookupType": "YES_NO",
+            "ViewApplicationId": 260,
+            "ApplicationShortName": "CE",
+            "ApplicationId": 260,
+            "ModuleId": "61ECAF4AAC3EE990E040449821C61C97",
+            "Meaning": "Yes or No",
+            "Description": null,
+            "CustomizationLevel": "S",
+            "RestAccessSecured": "SECURE",
+            "CreatedBy": "SEED_DATA_FROM_APPLICATION",
+            "CreationDate": "2013-08-08T07:02:39.213+00:00",
+            "LastUpdateDate": "2025-10-30T11:16:33.768+00:00",
+            "LastUpdateLogin": "-1",
+            "LastUpdatedBy": "SEED_DATA_FROM_APPLICATION",
+            "BossAppPackageName": null,
+            "BossAppPackageVersion": null,
+            "BossModuleName": null,
+            "BossIdentifier": null,
+            "lookupCodes": {
+                "items": [],
+                "count": 0,
+                "hasMore": false,
+                "limit": 25,
+                "offset": 0,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/0002000000065945535F4E4F0000000EACED000577080000000000000104/child/lookupCodes",
+                        "name": "lookupCodes",
+                        "kind": "collection"
+                    }
+                ]
+            }
+        },
+        {
+            "LookupType": "YES_NO",
+            "ViewApplicationId": 0,
+            "ApplicationShortName": "FND",
+            "ApplicationId": 0,
+            "ModuleId": "59E8C3156109383FE04044985FC66F58",
+            "Meaning": "Yes or No",
+            "Description": "Values to indicate yes or no.",
+            "CustomizationLevel": "S",
+            "RestAccessSecured": "ANON",
+            "CreatedBy": "SEED_DATA_FROM_APPLICATION",
+            "CreationDate": "2013-08-08T04:00:49.173+00:00",
+            "LastUpdateDate": "2025-10-30T11:16:33.768+00:00",
+            "LastUpdateLogin": "-1",
+            "LastUpdatedBy": "SEED_DATA_FROM_APPLICATION",
+            "BossAppPackageName": null,
+            "BossAppPackageVersion": null,
+            "BossModuleName": null,
+            "BossIdentifier": null,
+            "lookupCodes": {
+                "items": [
+                    {
+                        "LookupCode": "N",
+                        "ViewApplicationId": 0,
+                        "Meaning": "No",
+                        "Description": null,
+                        "EnabledFlag": "Y",
+                        "StartDateActive": null,
+                        "EndDateActive": null,
+                        "DisplaySequence": null,
+                        "Tag": null,
+                        "CreatedBy": "SEED_DATA_FROM_APPLICATION",
+                        "CreationDate": "2013-08-08T04:00:49.181+00:00",
+                        "LastUpdateDate": "2025-10-30T11:16:43.605+00:00",
+                        "LastUpdateLogin": "-1",
+                        "LastUpdatedBy": "SEED_DATA_FROM_APPLICATION"
+                    },
+                    {
+                        "LookupCode": "Y",
+                        "ViewApplicationId": 0,
+                        "Meaning": "Yes",
+                        "Description": null,
+                        "EnabledFlag": "Y",
+                        "StartDateActive": null,
+                        "EndDateActive": null,
+                        "DisplaySequence": null,
+                        "Tag": null,
+                        "CreatedBy": "SEED_DATA_FROM_APPLICATION",
+                        "CreationDate": "2013-08-08T04:00:49.186+00:00",
+                        "LastUpdateDate": "2025-10-30T11:16:43.605+00:00",
+                        "LastUpdateLogin": "-1",
+                        "LastUpdatedBy": "SEED_DATA_FROM_APPLICATION"
+                    }
+                ],
+                "count": 2,
+                "hasMore": false,
+                "limit": 25,
+                "offset": 0,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/0002000000065945535F4E4F0000000EACED000577080000000000000000/child/lookupCodes",
+                        "name": "lookupCodes",
+                        "kind": "collection"
+                    }
+                ]
+            }
+        },
+        {
+            "LookupType": "YES_NO",
+            "ViewApplicationId": 201,
+            "ApplicationShortName": "PO",
+            "ApplicationId": 201,
+            "ModuleId": "61ECAF4AAAC5E990E040449821C61C97",
+            "Meaning": "Yes and No",
+            "Description": "Yes and No values.",
+            "CustomizationLevel": "S",
+            "RestAccessSecured": "SECURE",
+            "CreatedBy": "SEED_DATA_FROM_APPLICATION",
+            "CreationDate": "2013-08-08T07:02:29.138+00:00",
+            "LastUpdateDate": "2025-10-30T11:16:33.768+00:00",
+            "LastUpdateLogin": "-1",
+            "LastUpdatedBy": "SEED_DATA_FROM_APPLICATION",
+            "BossAppPackageName": null,
+            "BossAppPackageVersion": null,
+            "BossModuleName": null,
+            "BossIdentifier": null,
+            "lookupCodes": {
+                "items": [],
+                "count": 0,
+                "hasMore": false,
+                "limit": 25,
+                "offset": 0,
+                "links": [
+                    {
+                        "rel": "self",
+                        "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/genericLookups/0002000000065945535F4E4F0000000EACED0005770800000000000000C9/child/lookupCodes",
+                        "name": "lookupCodes",
+                        "kind": "collection"
+                    }
+                ]
+            }
+        }
+    ],
+    "count": 4,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/genericLookups",
+            "name": "genericLookups",
+            "kind": "collection"
+        }
+    ]
+}
