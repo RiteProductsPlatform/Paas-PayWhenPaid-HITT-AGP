@@ -1,0 +1,8 @@
+{
+  "id": "landing_dashboard",
+  "description": "Flow main",
+  "defaultPage": "landing_dashboard-start",
+  "services": {},
+  "types": {},
+  "variables": {}
+}

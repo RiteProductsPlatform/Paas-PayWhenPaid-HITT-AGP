@@ -1,0 +1,58 @@
+{
+    "items": [
+        {
+            "ap_invoice": "16617011"
+        },
+        {
+            "ap_invoice": "16617012"
+        },
+        {
+            "ap_invoice": "16617013"
+        },
+        {
+            "ap_invoice": "166183001"
+        },
+        {
+            "ap_invoice": "166184010"
+        },
+        {
+            "ap_invoice": "166184011"
+        },
+        {
+            "ap_invoice": "166184013"
+        },
+        {
+            "ap_invoice": "20251210"
+        },
+        {
+            "ap_invoice": "20251211"
+        },
+        {
+            "ap_invoice": "ERS-52358-450556"
+        },
+        {
+            "ap_invoice": "INV-oooo"
+        },
+        {
+            "ap_invoice": "PayWhenPaid_17NOV"
+        }
+    ],
+    "hasMore": false,
+    "limit": 50,
+    "offset": 0,
+    "count": 12,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/pwp/PWP_WORKBENCH_APINV_LOV?P_USERNAME=rite.user"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/pwp/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/pwp/PWP_WORKBENCH_APINV_LOV?P_USERNAME=rite.user"
+        }
+    ]
+}

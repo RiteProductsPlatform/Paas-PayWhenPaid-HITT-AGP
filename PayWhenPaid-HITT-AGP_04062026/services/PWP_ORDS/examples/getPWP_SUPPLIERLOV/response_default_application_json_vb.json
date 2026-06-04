@@ -1,0 +1,73 @@
+{
+    "items": [
+        {
+            "vendor_name": "Lee Supplies"
+        },
+        {
+            "vendor_name": "Amazon"
+        },
+        {
+            "vendor_name": "OAK_SUPPLIER"
+        },
+        {
+            "vendor_name": "ABC Bank"
+        },
+        {
+            "vendor_name": "EIP Inc"
+        },
+        {
+            "vendor_name": "Syneos Health"
+        },
+        {
+            "vendor_name": "OAK_TEST"
+        },
+        {
+            "vendor_name": "ABC Consulting"
+        },
+        {
+            "vendor_name": "Pay When Paid Supplier"
+        },
+        {
+            "vendor_name": "Corning Life Sciences"
+        },
+        {
+            "vendor_name": "Staffing Services"
+        },
+        {
+            "vendor_name": "United Systems and Networks"
+        },
+        {
+            "vendor_name": "US Gas and Electric"
+        },
+        {
+            "vendor_name": "Staples"
+        },
+        {
+            "vendor_name": "Amazon Refund Supplier"
+        },
+        {
+            "vendor_name": "Airborne"
+        },
+        {
+            "vendor_name": "Office Depot"
+        }
+    ],
+    "hasMore": false,
+    "limit": 50,
+    "offset": 0,
+    "count": 17,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/pwp/PWP_SUPPLIERLOV"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/pwp/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/pwp/PWP_SUPPLIERLOV"
+        }
+    ]
+}

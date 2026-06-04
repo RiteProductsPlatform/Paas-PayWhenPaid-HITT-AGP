@@ -1,0 +1,25 @@
+{
+  "description": "PWP Criteria smart search configuration",
+  "filters": {
+    "Project": {
+      "type": "oj-sp/smart-search/default-filters/SelectSingleFilter",
+      "label": "Project Name",
+      "options": {
+        "field": "project_id",
+        "optionsData": "[[ $search.filters.Project.options.optionsData ]]",
+        "optionsKeys": "[[ $search.filters.Project.options.optionsKeys ]]"
+      },
+      "data": {}
+    },
+    "EnableCriteria": {
+      "type": "oj-sp/smart-search/default-filters/SelectSingleFilter",
+      "label": "Enable Criteria",
+      "options": {
+        "field": "enabled_flag",
+        "optionsData": "[[ $search.filters.EnableCriteria.options.optionsData ]]",
+        "optionsKeys": "[[ $search.filters.EnableCriteria.options.optionsKeys ]]"
+      },
+      "data": {}
+    }
+  }
+}

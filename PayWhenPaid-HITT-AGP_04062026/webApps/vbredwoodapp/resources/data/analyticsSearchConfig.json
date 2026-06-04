@@ -1,0 +1,25 @@
+{
+  "description": "PWP Analytics smart search configuration",
+  "filters": {
+    "Project": {
+      "type": "oj-sp/smart-search/default-filters/SelectSingleFilter",
+      "label": "Project Name",
+      "options": {
+        "field": "project_name",
+        "optionsData": "[[ $search.filters.Project.options.optionsData ]]",
+        "optionsKeys": "[[ $search.filters.Project.options.optionsKeys ]]"
+      },
+      "data": {}
+    },
+    "Supplier": {
+      "type": "oj-sp/smart-search/default-filters/SelectSingleFilter",
+      "label": "Supplier Name",
+      "options": {
+        "field": "vendor_name",
+        "optionsData": "[[ $search.filters.Supplier.options.optionsData ]]",
+        "optionsKeys": "[[ $search.filters.Supplier.options.optionsKeys ]]"
+      },
+      "data": {}
+    }
+  }
+}

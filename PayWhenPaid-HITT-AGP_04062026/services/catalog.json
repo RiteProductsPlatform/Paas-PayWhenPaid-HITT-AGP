@@ -1,0 +1,249 @@
+{
+    "backends": {
+        "fscmRestApi": {
+            "serviceType": "adf-describe",
+            "serviceTypeProperties": {
+                "faCatalogAppId": "REST-fscmRestApp"
+            },
+            "description": "Enterprise Resource Planning and Supply Chain",
+            "headers": {
+                "REST-Framework-Version": "4"
+            },
+            "transforms": {
+                "path": "vb/BusinessObjectsTransforms"
+            },
+            "servers": [
+                {
+                    "url": "https://{fusionInstance}",
+                    "description": "Overridden Default Server",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_a5269e6d-aef8-4f74-a009-41bba42801ff"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_f062b4fe-9f3b-4fab-861c-90842404afb3"
+                            }
+                        },
+                        "anonymousAccess": true
+                    },
+                    "variables": {
+                        "fusionInstance": {
+                            "default": "ibnljb-dev1.fa.ocs.oraclecloud.com"
+                        }
+                    }
+                }
+            ]
+        },
+        "getCriteriaall": {
+            "servers": [
+                {
+                    "url": "https://gd5b5a5e5bf12ad-mironpaas.adb.us-phoenix-1.oraclecloudapps.com/ords/miron_rite/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "postCriteria": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "getapholddetails": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "updateflagcriteria": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "getaraplinkdetails": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "gettaskfromords": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "getsuppliernamefromords": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "getsuppliersiteords": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "getexptypenameords": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "getexptypecatords": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "PWP_ORDS": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080/ords/timerite/pwp",
+                    "description": "Ords Timerite"
+                }
+            ]
+        },
+        "PWP_DB": {
+            "servers": [
+                {
+                    "url": "https://g1c14d1eec1bfd1-dev1atp.adb.us-ashburn-1.oraclecloudapps.com/ords/rite_dev1/pwp",
+                    "description": "Ords Timerite",
+                    "x-vb": {
+                        "anonymousAccess": true,
+                        "forceProxy": "cors",
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_910bd785-9472-4f5d-a0c2-d0625f6c3564"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_1aeed9bc-0fe4-4cf4-8339-fc03e1c6eae4"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "ics": {
+            "serviceType": "ics",
+            "description": "casey.brown",
+            "servers": [
+                {
+                    "url": "vb-catalog://backends.tenant/ics",
+                    "description": "Overridden Integration Server",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "cloud"
+                            }
+                        },
+                        "forceProxy": "always"
+                    }
+                }
+            ]
+        },
+        "fa": {
+            "serviceType": "fa-base",
+            "description": "Oracle Cloud Applications",
+            "servers": [
+                {
+                    "url": "vb-catalog://backends.tenant/fa",
+                    "description": "Overridden Default Server",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_fa1ee4d4-fd00-4fd2-9a9d-db2c506452e9"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "PWP_Analytics": {
+            "servers": [
+                {
+                    "url": "http://129.158.228.138:8080",
+                    "description": "129.158.228.138",
+                    "x-vb": {
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "PWP_OIC": {
+            "servers": [
+                {
+                    "url": "https://hitt-dev1-oic-idalkllrlwlk-ia.integration.us-ashburn-1.ocp.oraclecloud.com",
+                    "description": "Riteoicdev Idjm2yj32zav Ia Integration Us Ashburn 1 Ocp Oraclecloud Com",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_52b1643d-0fe0-4ae3-9cfe-fa46babd84aa"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_b905b863-bc29-4f5a-9d02-dcd0bce82af4"
+                            }
+                        },
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        }
+      }
+}

@@ -1,0 +1,38 @@
+{
+    "items": [
+        {
+            "aging_bucket": "0-15days",
+            "amountheld_of_invoices": null
+        },
+        {
+            "aging_bucket": "16-30days",
+            "amountheld_of_invoices": null
+        },
+        {
+            "aging_bucket": "31-60days",
+            "amountheld_of_invoices": null
+        },
+        {
+            "aging_bucket": "60+days",
+            "amountheld_of_invoices": null
+        }
+    ],
+    "hasMore": false,
+    "limit": 50,
+    "offset": 0,
+    "count": 4,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/pwp/PWP_AP_AGING"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/pwp/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/pwp/PWP_AP_AGING"
+        }
+    ]
+}

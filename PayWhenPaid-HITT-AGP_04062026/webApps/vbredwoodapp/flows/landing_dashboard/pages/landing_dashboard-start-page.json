@@ -1,0 +1,15 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {},
+  "metadata": {},
+  "types": {},
+  "eventListeners": {},
+  "imports": {
+    "components": {
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      }
+    }
+  }
+}

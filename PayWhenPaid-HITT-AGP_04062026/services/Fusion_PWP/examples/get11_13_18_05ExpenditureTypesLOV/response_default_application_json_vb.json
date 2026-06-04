@@ -1,0 +1,166 @@
+{
+    "items": [
+        {
+            "ExpenditureTypeId": 300000224897789,
+            "ExpenditureTypeName": "Rent Allocation",
+            "ExpenditureCategoryId": 300000047429441,
+            "ExpenditureCategory": "Audit Fee"
+        },
+        {
+            "ExpenditureTypeId": 300000047429465,
+            "ExpenditureTypeName": "Computers",
+            "ExpenditureCategoryId": 300000047429441,
+            "ExpenditureCategory": "Audit Fee"
+        },
+        {
+            "ExpenditureTypeId": 300000047429525,
+            "ExpenditureTypeName": "Miscellaneous",
+            "ExpenditureCategoryId": 300000047429441,
+            "ExpenditureCategory": "Audit Fee"
+        },
+        {
+            "ExpenditureTypeId": 300000047429474,
+            "ExpenditureTypeName": "Equipment",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000146405089,
+            "ExpenditureTypeName": "Medical Equipment",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300001516108329,
+            "ExpenditureTypeName": "ROV Rental Operation Day",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000202450220,
+            "ExpenditureTypeName": "Supply Chain Resources",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000195964676,
+            "ExpenditureTypeName": "Heavy Equipment.Road Grader",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000195964682,
+            "ExpenditureTypeName": "Generator",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000195964669,
+            "ExpenditureTypeName": "Heavy Equipment.Forklift",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000195964654,
+            "ExpenditureTypeName": "Heavy Equipment.Excavator",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000195964648,
+            "ExpenditureTypeName": "Heavy Equipment.Stringing Truck",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000195964693,
+            "ExpenditureTypeName": "HVAC",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000047429548,
+            "ExpenditureTypeName": "Purchased Equipment",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000106198392,
+            "ExpenditureTypeName": "Major Equipment",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000195964663,
+            "ExpenditureTypeName": "Heavy Equipment.Crane",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000195964688,
+            "ExpenditureTypeName": "Air Compressor",
+            "ExpenditureCategoryId": 300000047429442,
+            "ExpenditureCategory": "Communications"
+        },
+        {
+            "ExpenditureTypeId": 300000101276236,
+            "ExpenditureTypeName": "Taxi",
+            "ExpenditureCategoryId": 300000047429443,
+            "ExpenditureCategory": "Corporate Social Responsibility"
+        },
+        {
+            "ExpenditureTypeId": 300000047429558,
+            "ExpenditureTypeName": "Supplies",
+            "ExpenditureCategoryId": 300000047429443,
+            "ExpenditureCategory": "Corporate Social Responsibility"
+        },
+        {
+            "ExpenditureTypeId": 300000101276241,
+            "ExpenditureTypeName": "Foreign Travel",
+            "ExpenditureCategoryId": 300000047429443,
+            "ExpenditureCategory": "Corporate Social Responsibility"
+        },
+        {
+            "ExpenditureTypeId": 300000047429459,
+            "ExpenditureTypeName": "Airfare",
+            "ExpenditureCategoryId": 300000047429443,
+            "ExpenditureCategory": "Corporate Social Responsibility"
+        },
+        {
+            "ExpenditureTypeId": 300000047429519,
+            "ExpenditureTypeName": "Meals",
+            "ExpenditureCategoryId": 300000047429443,
+            "ExpenditureCategory": "Corporate Social Responsibility"
+        },
+        {
+            "ExpenditureTypeId": 300000047429491,
+            "ExpenditureTypeName": "Hotel",
+            "ExpenditureCategoryId": 300000047429443,
+            "ExpenditureCategory": "Corporate Social Responsibility"
+        },
+        {
+            "ExpenditureTypeId": 300000266780987,
+            "ExpenditureTypeName": "Employee Gifts",
+            "ExpenditureCategoryId": 300000047429444,
+            "ExpenditureCategory": "Entertainment"
+        },
+        {
+            "ExpenditureTypeId": 300000266780992,
+            "ExpenditureTypeName": "Entertainment",
+            "ExpenditureCategoryId": 300000047429444,
+            "ExpenditureCategory": "Entertainment"
+        }
+    ],
+    "count": 25,
+    "hasMore": true,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/expenditureTypesLOV",
+            "name": "expenditureTypesLOV",
+            "kind": "collection"
+        }
+    ]
+}

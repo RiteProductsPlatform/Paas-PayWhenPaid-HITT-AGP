@@ -1,0 +1,40 @@
+{
+    "items": [
+        {
+            "project_name": "PWP Test",
+            "vendor_name": "A & A Landscape",
+            "ar_invoices_amount": null,
+            "ap_invoices_approved": null,
+            "ap_invoices_paid": null,
+            "pending_ap_invoices_amount": null,
+            "percentage_amount_released": null
+        },
+        {
+            "project_name": "PRT2 Testing_R",
+            "vendor_name": "A & A Landscape",
+            "ar_invoices_amount": null,
+            "ap_invoices_approved": null,
+            "ap_invoices_paid": null,
+            "pending_ap_invoices_amount": null,
+            "percentage_amount_released": null
+        }
+    ],
+    "hasMore": false,
+    "limit": 50,
+    "offset": 0,
+    "count": 2,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://g1c14d1eec1bfd1-dev1atp.adb.us-ashburn-1.oraclecloudapps.com/ords/rite_dev1/pwp/PWP_ANALYTICS_SEARCH?P_USERNAME=RGorremuchu%40hitt-gc.com"
+        },
+        {
+            "rel": "describedby",
+            "href": "https://g1c14d1eec1bfd1-dev1atp.adb.us-ashburn-1.oraclecloudapps.com/ords/rite_dev1/metadata-catalog/pwp/item"
+        },
+        {
+            "rel": "first",
+            "href": "https://g1c14d1eec1bfd1-dev1atp.adb.us-ashburn-1.oraclecloudapps.com/ords/rite_dev1/pwp/PWP_ANALYTICS_SEARCH?P_USERNAME=RGorremuchu%40hitt-gc.com"
+        }
+    ]
+}

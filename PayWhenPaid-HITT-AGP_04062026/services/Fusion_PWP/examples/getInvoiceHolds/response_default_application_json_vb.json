@@ -1,0 +1,146 @@
+{
+    "items": [
+        {
+            "HoldId": 300001777792397,
+            "InvoiceNumber": "PWP TESTING 01",
+            "BusinessUnit": "US1 Business Unit",
+            "Supplier": "ABC Consulting",
+            "LineHeld": null,
+            "HoldDate": "2025-11-07T10:12:16.002+00:00",
+            "HoldDetails": null,
+            "HoldReason": "Pay When Paid Enabled",
+            "ReleaseReason": "PWP Release",
+            "WorkflowStatus": null,
+            "ReleaseName": "PWP Release",
+            "HoldName": "Pay When Paid Enabled",
+            "ReleaseDate": "2025-11-07T11:17:50+00:00",
+            "HeldBy": "rite user",
+            "CreatedBy": "rite.user",
+            "CreationDate": "2025-11-07T10:12:16.002+00:00",
+            "LastUpdateDate": "2025-11-07T11:17:50+00:00",
+            "LastUpdatedBy": "rite.user",
+            "LastUpdateLogin": "41FDBAFA91EE990EE0635661F00AD6EB",
+            "PurchaseOrderNumber": null,
+            "PurchaseOrderLineNumber": null,
+            "PurchaseOrderScheduleLineNumber": null,
+            "ReceiptNumber": null,
+            "ReceiptLineNumber": null,
+            "ConsumptionAdviceNumber": null,
+            "ConsumptionAdviceLineNumber": null,
+            "PartyId": "300000075039539",
+            "Party": "ABC Consulting",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/300001777792397",
+                    "name": "invoiceHolds",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/300001777792397",
+                    "name": "invoiceHolds",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/300001777792397/lov/HoldNameLookupVVO1",
+                    "name": "HoldNameLookupVVO1",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/300001777792397/lov/ReleaseNameVVO1",
+                    "name": "ReleaseNameVVO1",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/300001777792397/child/invoiceHoldDff",
+                    "name": "invoiceHoldDff",
+                    "kind": "collection"
+                }
+            ]
+        },
+        {
+            "HoldId": 583614,
+            "InvoiceNumber": "PWP TESTING 01",
+            "BusinessUnit": "US1 Business Unit",
+            "Supplier": "ABC Consulting",
+            "LineHeld": null,
+            "HoldDate": "2025-11-04T09:47:21.036+00:00",
+            "HoldDetails": null,
+            "HoldReason": "Total of invoice lines does not equal invoice amount.",
+            "ReleaseReason": "Invoice variance corrected.",
+            "WorkflowStatus": null,
+            "ReleaseName": "Variance corrected",
+            "HoldName": "Line variance",
+            "ReleaseDate": "2025-11-04T09:50:44.515+00:00",
+            "HeldBy": "System",
+            "CreatedBy": "5",
+            "CreationDate": "2025-11-04T09:47:21.036+00:00",
+            "LastUpdateDate": "2025-11-04T09:50:44.515+00:00",
+            "LastUpdatedBy": "5",
+            "LastUpdateLogin": "41FF3000BDC7BA63E0635561F00A7276",
+            "PurchaseOrderNumber": null,
+            "PurchaseOrderLineNumber": null,
+            "PurchaseOrderScheduleLineNumber": null,
+            "ReceiptNumber": null,
+            "ReceiptLineNumber": null,
+            "ConsumptionAdviceNumber": null,
+            "ConsumptionAdviceLineNumber": null,
+            "PartyId": "300000075039539",
+            "Party": "ABC Consulting",
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/583614",
+                    "name": "invoiceHolds",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/583614",
+                    "name": "invoiceHolds",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/583614/lov/HoldNameLookupVVO1",
+                    "name": "HoldNameLookupVVO1",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/583614/lov/ReleaseNameVVO1",
+                    "name": "ReleaseNameVVO1",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "child",
+                    "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/583614/child/invoiceHoldDff",
+                    "name": "invoiceHoldDff",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "count": 2,
+    "hasMore": false,
+    "limit": 25,
+    "offset": 0,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds",
+            "name": "invoiceHolds",
+            "kind": "collection"
+        }
+    ]
+}

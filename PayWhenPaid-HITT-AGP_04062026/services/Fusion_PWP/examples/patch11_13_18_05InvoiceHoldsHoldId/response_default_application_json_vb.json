@@ -1,0 +1,65 @@
+{
+    "HoldId": 300001777792397,
+    "InvoiceNumber": "PWP TESTING 01",
+    "BusinessUnit": "US1 Business Unit",
+    "Supplier": "ABC Consulting",
+    "LineHeld": null,
+    "HoldDate": "2025-11-07T10:12:16.002+00:00",
+    "HoldDetails": null,
+    "HoldReason": "Pay When Paid Enabled",
+    "ReleaseReason": "PWP Release",
+    "WorkflowStatus": null,
+    "ReleaseName": "PWP Release",
+    "HoldName": "Pay When Paid Enabled",
+    "ReleaseDate": "2025-11-07T11:17:50+00:00",
+    "HeldBy": "rite user",
+    "CreatedBy": "rite.user",
+    "CreationDate": "2025-11-07T10:12:16.002+00:00",
+    "LastUpdateDate": "2025-11-07T11:17:50+00:00",
+    "LastUpdatedBy": "rite.user",
+    "LastUpdateLogin": "41FDBAFA91EE990EE0635661F00AD6EB",
+    "PurchaseOrderNumber": null,
+    "PurchaseOrderLineNumber": null,
+    "PurchaseOrderScheduleLineNumber": null,
+    "ReceiptNumber": null,
+    "ReceiptLineNumber": null,
+    "ConsumptionAdviceNumber": null,
+    "ConsumptionAdviceLineNumber": null,
+    "PartyId": "300000075039539",
+    "Party": "ABC Consulting",
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/300001777792397",
+            "name": "invoiceHolds",
+            "kind": "item",
+            "properties": {
+                "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000278"
+            }
+        },
+        {
+            "rel": "canonical",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/300001777792397",
+            "name": "invoiceHolds",
+            "kind": "item"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/300001777792397/lov/HoldNameLookupVVO1",
+            "name": "HoldNameLookupVVO1",
+            "kind": "collection"
+        },
+        {
+            "rel": "lov",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/300001777792397/lov/ReleaseNameVVO1",
+            "name": "ReleaseNameVVO1",
+            "kind": "collection"
+        },
+        {
+            "rel": "child",
+            "href": "https://fa-etao-dev20-saasfademo1.ds-fa.oraclepdemos.com:443/fscmRestApi/resources/11.13.18.05/invoiceHolds/300001777792397/child/invoiceHoldDff",
+            "name": "invoiceHoldDff",
+            "kind": "collection"
+        }
+    ]
+}

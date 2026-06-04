@@ -1,0 +1,686 @@
+{
+    "DATA_DS": {
+        "G_1": [
+            {
+                "name": "SC0015",
+                "CONTRACT_ID": "100000310218764"
+            },
+            {
+                "name": "C10042",
+                "CONTRACT_ID": "300000163909909"
+            },
+            {
+                "name": "1003",
+                "CONTRACT_ID": "100000368360371"
+            },
+            {
+                "name": "STYMTEST",
+                "CONTRACT_ID": "300001715237745"
+            },
+            {
+                "name": "TT522",
+                "CONTRACT_ID": "300000169239528"
+            },
+            {
+                "name": "SC00028",
+                "CONTRACT_ID": "300000175635286"
+            },
+            {
+                "name": "1",
+                "CONTRACT_ID": "100000310218769"
+            },
+            {
+                "name": "3",
+                "CONTRACT_ID": "100000310218770"
+            },
+            {
+                "name": "1001",
+                "CONTRACT_ID": "100000310218773"
+            },
+            {
+                "name": "C10039",
+                "CONTRACT_ID": "100000602035888"
+            },
+            {
+                "name": "31782_58116",
+                "CONTRACT_ID": "300000203643438"
+            },
+            {
+                "name": "C20033",
+                "CONTRACT_ID": "300000214900486"
+            },
+            {
+                "name": "17758_20202508",
+                "CONTRACT_ID": "300000206205321"
+            },
+            {
+                "name": "BPA 001",
+                "CONTRACT_ID": "300000206205368"
+            },
+            {
+                "name": "987654",
+                "CONTRACT_ID": "300000391216737"
+            },
+            {
+                "name": "234567",
+                "CONTRACT_ID": "300000333920129"
+            },
+            {
+                "name": "456789",
+                "CONTRACT_ID": "300000391216779"
+            },
+            {
+                "name": "C10049",
+                "CONTRACT_ID": "300000227241714"
+            },
+            {
+                "name": "C10073",
+                "CONTRACT_ID": "300000216857229"
+            },
+            {
+                "name": "C10043",
+                "CONTRACT_ID": "300000227241691"
+            },
+            {
+                "name": "C10048",
+                "CONTRACT_ID": "300000227241785"
+            },
+            {
+                "name": "TC003",
+                "CONTRACT_ID": "100000310218717"
+            },
+            {
+                "name": "C10019",
+                "CONTRACT_ID": "100000310218727"
+            },
+            {
+                "name": "C10024",
+                "CONTRACT_ID": "100000310218733"
+            },
+            {
+                "name": "C10012",
+                "CONTRACT_ID": "100000310218744"
+            },
+            {
+                "name": "C10050",
+                "CONTRACT_ID": "100000310218757"
+            },
+            {
+                "name": "C10015",
+                "CONTRACT_ID": "100000310218754"
+            },
+            {
+                "name": "C10046",
+                "CONTRACT_ID": "300000194326572"
+            },
+            {
+                "name": "C10044",
+                "CONTRACT_ID": "300000191632005"
+            },
+            {
+                "name": "C10056",
+                "CONTRACT_ID": "300000195588580"
+            },
+            {
+                "name": "C10062",
+                "CONTRACT_ID": "300000195588728"
+            },
+            {
+                "name": "US1 MC Lee",
+                "CONTRACT_ID": "300000196094094"
+            },
+            {
+                "name": "C10004",
+                "CONTRACT_ID": "100000310218713"
+            },
+            {
+                "name": "MMX CP",
+                "CONTRACT_ID": "300001690882587"
+            },
+            {
+                "name": "1096",
+                "CONTRACT_ID": "300001700905163"
+            },
+            {
+                "name": "141001",
+                "CONTRACT_ID": "300001690935210"
+            },
+            {
+                "name": "52308",
+                "CONTRACT_ID": "300001690796116"
+            },
+            {
+                "name": "MMX Contract 10005",
+                "CONTRACT_ID": "300001690879051"
+            },
+            {
+                "name": "333",
+                "CONTRACT_ID": "300001707354595"
+            },
+            {
+                "name": "ISRO PSLV Contract",
+                "CONTRACT_ID": "300001711408883"
+            },
+            {
+                "name": "666",
+                "CONTRACT_ID": "300001706030639"
+            },
+            {
+                "name": "777",
+                "CONTRACT_ID": "300001706030808"
+            },
+            {
+                "name": "678",
+                "CONTRACT_ID": "300001706031509"
+            },
+            {
+                "name": "mm",
+                "CONTRACT_ID": "300001706202684"
+            },
+            {
+                "name": "AK4004",
+                "CONTRACT_ID": "300001792373935"
+            },
+            {
+                "name": "AK999",
+                "CONTRACT_ID": "300001793059388"
+            },
+            {
+                "name": "INV004",
+                "CONTRACT_ID": "300001796772306"
+            },
+            {
+                "name": "INV006",
+                "CONTRACT_ID": "300001797155603"
+            },
+            {
+                "name": "CONTRCT-890",
+                "CONTRACT_ID": "300001796095051"
+            },
+            {
+                "name": "AA-1001",
+                "CONTRACT_ID": "300001791825459"
+            },
+            {
+                "name": "Deloitte Contract 1",
+                "CONTRACT_ID": "300001769888816"
+            },
+            {
+                "name": "AK1003",
+                "CONTRACT_ID": "300001791426217"
+            },
+            {
+                "name": "INV002",
+                "CONTRACT_ID": "300001795717905"
+            },
+            {
+                "name": "C1066",
+                "CONTRACT_ID": "300001550010346"
+            },
+            {
+                "name": "test11",
+                "CONTRACT_ID": "300001690796460"
+            },
+            {
+                "name": "test",
+                "CONTRACT_ID": "300001690796412"
+            },
+            {
+                "name": "US CONTRACT",
+                "CONTRACT_ID": "300001707353784"
+            },
+            {
+                "name": "Manufacturing Contract",
+                "CONTRACT_ID": "300001699957941"
+            },
+            {
+                "name": "10017",
+                "CONTRACT_ID": "300001695521816"
+            },
+            {
+                "name": "888",
+                "CONTRACT_ID": "300001706030944"
+            },
+            {
+                "name": "222",
+                "CONTRACT_ID": "300001706031529"
+            },
+            {
+                "name": "INV005",
+                "CONTRACT_ID": "300001796772413"
+            },
+            {
+                "name": "RAG10023_CR",
+                "CONTRACT_ID": "300001793269321"
+            },
+            {
+                "name": "AK1001",
+                "CONTRACT_ID": "300001791044449"
+            },
+            {
+                "name": "AK2002",
+                "CONTRACT_ID": "300001791816033"
+            },
+            {
+                "name": "RSPWP1001",
+                "CONTRACT_ID": "300001793268606"
+            },
+            {
+                "name": "INV003",
+                "CONTRACT_ID": "300001796092701"
+            },
+            {
+                "name": "9999",
+                "CONTRACT_ID": "300001797357349"
+            },
+            {
+                "name": "EIP2000",
+                "CONTRACT_ID": "100000310218660"
+            },
+            {
+                "name": "C10013",
+                "CONTRACT_ID": "100000310218662"
+            },
+            {
+                "name": "C10005",
+                "CONTRACT_ID": "100000310218674"
+            },
+            {
+                "name": "C20015",
+                "CONTRACT_ID": "100000310218683"
+            },
+            {
+                "name": "TC002",
+                "CONTRACT_ID": "100000310218684"
+            },
+            {
+                "name": "BUY-AL-Pinnacle",
+                "CONTRACT_ID": "100000310218689"
+            },
+            {
+                "name": "C10058",
+                "CONTRACT_ID": "100000310218690"
+            },
+            {
+                "name": "EIP4444",
+                "CONTRACT_ID": "100000310218707"
+            },
+            {
+                "name": "C10001",
+                "CONTRACT_ID": "100000310218610"
+            },
+            {
+                "name": "C10020",
+                "CONTRACT_ID": "100000310218642"
+            },
+            {
+                "name": "Pinnacle-SLSA",
+                "CONTRACT_ID": "100000310218706"
+            },
+            {
+                "name": "C10017",
+                "CONTRACT_ID": "100000310218755"
+            },
+            {
+                "name": "C20006",
+                "CONTRACT_ID": "100000368077043"
+            },
+            {
+                "name": "2",
+                "CONTRACT_ID": "100000310218771"
+            },
+            {
+                "name": "TC001",
+                "CONTRACT_ID": "100000310218742"
+            },
+            {
+                "name": "1004",
+                "CONTRACT_ID": "100000368360759"
+            },
+            {
+                "name": "C10033",
+                "CONTRACT_ID": "300000181251066"
+            },
+            {
+                "name": "US JMK",
+                "CONTRACT_ID": "100000310218608"
+            },
+            {
+                "name": "C10002",
+                "CONTRACT_ID": "100000310218611"
+            },
+            {
+                "name": "C10008",
+                "CONTRACT_ID": "100000310218612"
+            },
+            {
+                "name": "RA511",
+                "CONTRACT_ID": "100000310218613"
+            },
+            {
+                "name": "C10007",
+                "CONTRACT_ID": "100000310218640"
+            },
+            {
+                "name": "C10016",
+                "CONTRACT_ID": "100000310218641"
+            },
+            {
+                "name": "MG993",
+                "CONTRACT_ID": "100000310218643"
+            },
+            {
+                "name": "C10022",
+                "CONTRACT_ID": "100000310218644"
+            },
+            {
+                "name": "US1 JMK",
+                "CONTRACT_ID": "100000310218647"
+            },
+            {
+                "name": "C10021",
+                "CONTRACT_ID": "100000310218655"
+            },
+            {
+                "name": "C10055",
+                "CONTRACT_ID": "100000310218657"
+            },
+            {
+                "name": "C0038",
+                "CONTRACT_ID": "100000549318857"
+            },
+            {
+                "name": "SM443",
+                "CONTRACT_ID": "100000310218581"
+            },
+            {
+                "name": "JMK 100",
+                "CONTRACT_ID": "100000310218591"
+            },
+            {
+                "name": "456789000",
+                "CONTRACT_ID": "300000391217211"
+            },
+            {
+                "name": "Demo Contract Project",
+                "CONTRACT_ID": "300001001693639"
+            },
+            {
+                "name": "RITE16",
+                "CONTRACT_ID": "300000846786045"
+            },
+            {
+                "name": "23456789",
+                "CONTRACT_ID": "300000391217166"
+            },
+            {
+                "name": "3456789",
+                "CONTRACT_ID": "300000391217183"
+            },
+            {
+                "name": "TI 888",
+                "CONTRACT_ID": "100000310218579"
+            },
+            {
+                "name": "C10028",
+                "CONTRACT_ID": "100000310218580"
+            },
+            {
+                "name": "JPO200",
+                "CONTRACT_ID": "100000310218592"
+            },
+            {
+                "name": "C10023",
+                "CONTRACT_ID": "100000310218593"
+            },
+            {
+                "name": "C10003",
+                "CONTRACT_ID": "100000310218594"
+            },
+            {
+                "name": "C10030",
+                "CONTRACT_ID": "100000310218596"
+            },
+            {
+                "name": "Pinnacle Tech SNL",
+                "CONTRACT_ID": "100000310218597"
+            },
+            {
+                "name": "C20005",
+                "CONTRACT_ID": "100000310218598"
+            },
+            {
+                "name": "C10026",
+                "CONTRACT_ID": "100000310218777"
+            },
+            {
+                "name": "SC0020",
+                "CONTRACT_ID": "100000310218779"
+            },
+            {
+                "name": "C10018",
+                "CONTRACT_ID": "100000310218710"
+            },
+            {
+                "name": "MG7566",
+                "CONTRACT_ID": "300000166634384"
+            },
+            {
+                "name": "1002",
+                "CONTRACT_ID": "100000368360251"
+            },
+            {
+                "name": " SC00027",
+                "CONTRACT_ID": "300000172087418"
+            },
+            {
+                "name": "SR00123",
+                "CONTRACT_ID": "300000172565826"
+            },
+            {
+                "name": "1810C",
+                "CONTRACT_ID": "300000173371639"
+            },
+            {
+                "name": "SC00029",
+                "CONTRACT_ID": "300000175635722"
+            },
+            {
+                "name": "C20020",
+                "CONTRACT_ID": "300000177756221"
+            },
+            {
+                "name": "19A332",
+                "CONTRACT_ID": "300000177773617"
+            },
+            {
+                "name": "OMSA80010-101",
+                "CONTRACT_ID": "300000177768534"
+            },
+            {
+                "name": "INFOSYS CONTRACT",
+                "CONTRACT_ID": "300001731850302"
+            },
+            {
+                "name": "12221",
+                "CONTRACT_ID": "300001762828674"
+            },
+            {
+                "name": "Deloitte Contract",
+                "CONTRACT_ID": "300001765952973"
+            },
+            {
+                "name": "MMX Contract",
+                "CONTRACT_ID": "300001690879154"
+            },
+            {
+                "name": "BP MMX",
+                "CONTRACT_ID": "300001690881697"
+            },
+            {
+                "name": "Multiple Lines Contract Project",
+                "CONTRACT_ID": "300001690947536"
+            },
+            {
+                "name": "STYM008",
+                "CONTRACT_ID": "300001706202748"
+            },
+            {
+                "name": "ISRO Contract",
+                "CONTRACT_ID": "300001709509087"
+            },
+            {
+                "name": "MMX",
+                "CONTRACT_ID": "300001706202666"
+            },
+            {
+                "name": "CP MMX",
+                "CONTRACT_ID": "300001690882361"
+            },
+            {
+                "name": "Associate Project In Contract level",
+                "CONTRACT_ID": "300001690960076"
+            },
+            {
+                "name": "Rated Based Project",
+                "CONTRACT_ID": "300001690893544"
+            },
+            {
+                "name": "Deloitte Contract LLP1",
+                "CONTRACT_ID": "300001776579300"
+            },
+            {
+                "name": "10082",
+                "CONTRACT_ID": "300001771706013"
+            },
+            {
+                "name": "OAK_PERCENT_COMPLETE",
+                "CONTRACT_ID": "300000313837900"
+            },
+            {
+                "name": "OAK_Fixed_Bid_Contract",
+                "CONTRACT_ID": "300000313534872"
+            },
+            {
+                "name": "Test2",
+                "CONTRACT_ID": "300001572901212"
+            },
+            {
+                "name": "Test18112024",
+                "CONTRACT_ID": "300001690578717"
+            },
+            {
+                "name": "Test 1",
+                "CONTRACT_ID": "300001572901068"
+            },
+            {
+                "name": "AIA_Retention_contract",
+                "CONTRACT_ID": "300001620468363"
+            },
+            {
+                "name": "OAK Demo Project",
+                "CONTRACT_ID": "300001696385710"
+            },
+            {
+                "name": "OAK-1044-2",
+                "CONTRACT_ID": "300001791812748"
+            },
+            {
+                "name": "OAK_RATE_BASED",
+                "CONTRACT_ID": "300000313770583"
+            },
+            {
+                "name": "OAK_PERCENT_SPENT",
+                "CONTRACT_ID": "300000313837928"
+            },
+            {
+                "name": "Demo Project 100325",
+                "CONTRACT_ID": "300001696385659"
+            },
+            {
+                "name": "CB-Sell-20250722174637",
+                "CONTRACT_ID": "300001766126672"
+            },
+            {
+                "name": "Test3",
+                "CONTRACT_ID": "300001572901432"
+            },
+            {
+                "name": "ER1001",
+                "CONTRACT_ID": "300001765952728"
+            },
+            {
+                "name": "CB-Sell-20250722175835",
+                "CONTRACT_ID": "300001766126686"
+            },
+            {
+                "name": "C2071",
+                "CONTRACT_ID": "300001767705851"
+            },
+            {
+                "name": "AIA Construction",
+                "CONTRACT_ID": "300001515348844"
+            },
+            {
+                "name": "5555",
+                "CONTRACT_ID": "300001514993824"
+            },
+            {
+                "name": "2000",
+                "CONTRACT_ID": "300001514993601"
+            },
+            {
+                "name": "3000",
+                "CONTRACT_ID": "300001514993746"
+            },
+            {
+                "name": "Construction Contract",
+                "CONTRACT_ID": "300001515009020"
+            },
+            {
+                "name": "Construction1.1",
+                "CONTRACT_ID": "300001515305535"
+            },
+            {
+                "name": "1999",
+                "CONTRACT_ID": "300001514987484"
+            },
+            {
+                "name": "1037",
+                "CONTRACT_ID": "300001514986934"
+            },
+            {
+                "name": "1034",
+                "CONTRACT_ID": "300001514986780"
+            },
+            {
+                "name": "1032",
+                "CONTRACT_ID": "300001496424855"
+            },
+            {
+                "name": "1039",
+                "CONTRACT_ID": "300001514987015"
+            },
+            {
+                "name": "1050",
+                "CONTRACT_ID": "300001514987209"
+            },
+            {
+                "name": "1033",
+                "CONTRACT_ID": "300001514986716"
+            },
+            {
+                "name": "1035",
+                "CONTRACT_ID": "300001514986833"
+            },
+            {
+                "name": "1036",
+                "CONTRACT_ID": "300001514986863"
+            },
+            {
+                "name": "1040",
+                "CONTRACT_ID": "300001514987092"
+            }
+        ]
+    }
+}

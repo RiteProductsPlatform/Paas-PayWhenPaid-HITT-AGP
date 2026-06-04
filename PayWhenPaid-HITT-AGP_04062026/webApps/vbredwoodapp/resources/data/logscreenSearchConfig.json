@@ -1,0 +1,25 @@
+{
+  "description": "PWP Log Details smart search configuration",
+  "filters": {
+    "SessionID": {
+      "type": "oj-sp/smart-search/default-filters/SelectSingleFilter",
+      "label": "Session ID",
+      "options": {
+        "field": "session_id",
+        "optionsData": "[[ $search.filters.SessionID.options.optionsData ]]",
+        "optionsKeys": "[[ $search.filters.SessionID.options.optionsKeys ]]"
+      },
+      "data": {}
+    },
+    "Username": {
+      "type": "oj-sp/smart-search/default-filters/SelectSingleFilter",
+      "label": "Username",
+      "options": {
+        "field": "user_id",
+        "optionsData": "[[ $search.filters.Username.options.optionsData ]]",
+        "optionsKeys": "[[ $search.filters.Username.options.optionsKeys ]]"
+      },
+      "data": {}
+    }
+  }
+}

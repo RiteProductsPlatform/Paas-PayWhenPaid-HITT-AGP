@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "supplier_name": "ABC Consulting"
+        },
+        {
+            "supplier_name": "Advanced Corp"
+        },
+        {
+            "supplier_name": "Lee Supplies"
+        },
+        {
+            "supplier_name": "Primrose Technologies"
+        }
+    ],
+    "hasMore": false,
+    "limit": 50,
+    "offset": 0,
+    "count": 4,
+    "links": [
+        {
+            "rel": "self",
+            "href": "http://129.158.228.138:8080/ords/timerite/pwp/PWP_WORKBENCH_SUPPLIER_LOV?P_USERNAME=rite.user"
+        },
+        {
+            "rel": "describedby",
+            "href": "http://129.158.228.138:8080/ords/timerite/metadata-catalog/pwp/item"
+        },
+        {
+            "rel": "first",
+            "href": "http://129.158.228.138:8080/ords/timerite/pwp/PWP_WORKBENCH_SUPPLIER_LOV?P_USERNAME=rite.user"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "items": [
+        {
+            "sequence_id": 3062637,
+            "session_id": "undefined",
+            "user_id": "RGorremuchu@hitt-gc.com",
+            "page_name": "PWP Criteria PWP_ORDS/postPWP_ORCL_REST_API SubmitBtnAction",
+            "api_name": "getCriteria",
+            "procedure_name": "ORDS-PWP_ORCL_REST_API",
+            "level_id": null,
+            "debug_message": "unable to find endpoint '{\"endpoint\":\"base:ICS/getAP_RELEASE_HOLD_V1_1_0GetInvoiceNumber\",\"containerNamespace\":\"base\",\"programmatic\":false}'attempted REST call failed",
+            "creationdatewithtimestamp": "2026-03-23T08:56:04.106088Z",
+            "error_code": null,
+            "error_details": "unable to find endpoint '{\"endpoint\":\"base:ICS/getAP_RELEASE_HOLD_V1_1_0GetInvoiceNumber\",\"containerNamespace\":\"base\",\"programmatic\":false}'attempted REST call failed",
+            "severity_level": "INFO",
+            "application_name": "PAY WHEN PAID",
+            "record_source": null,
+            "environment": null,
+            "host_name": null,
+            "request_id": null,
+            "created_by": "RGorremuchu@hitt-gc.com",
+            "creation_date": "2026-03-23T08:56:04.10608Z",
+            "last_updated_by": "RGorremuchu@hitt-gc.com",
+            "last_update_date": "2026-03-23T08:56:04.10608Z"
+        },
+        {
+            "sequence_id": 3077591,
+            "session_id": "undefined",
+            "user_id": "RGorremuchu@hitt-gc.com",
+            "page_name": "PWP Workbench postPWP_ORCL_REST_API ReleaseButtonActionChain2",
+            "api_name": "/fscmRestApi/resources/11.13.18.05/invoiceHolds/",
+            "procedure_name": "ORDS-PWP_ORCL_REST_API",
+            "level_id": null,
+            "debug_message": "Applying List binding LOV_ReleaseName with given set of values leads to no matching row for a row of type :InvoiceHold1, key oracle.jbo.Key[300000014830730 ]",
+            "creationdatewithtimestamp": "2026-03-25T11:35:57.056376Z",
+            "error_code": null,
+            "error_details": "Applying List binding LOV_ReleaseName with given set of values leads to no matching row for a row of type :InvoiceHold1, key oracle.jbo.Key[300000014830730 ]",
+            "severity_level": "INFO",
+            "application_name": "PAY WHEN PAID",
+            "record_source": null,
+            "environment": null,
+            "host_name": null,
+            "request_id": null,
+            "created_by": "RGorremuchu@hitt-gc.com",
+            "creation_date": "2026-03-25T11:35:57.056371Z",
+            "last_updated_by": "RGorremuchu@hitt-gc.com",
+            "last_update_date": "2026-03-25T11:35:57.056371Z"
+        }
+    ],
+    "hasMore": false,
+    "limit": 50,
+    "offset": 0,
+    "count": 2,
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://g1c14d1eec1bfd1-dev1atp.adb.us-ashburn-1.oraclecloudapps.com/ords/rite_dev1/pwp/PWP_DebugLogs?P_USER_ID=RGorremuchu%40hitt-gc.com"
+        },
+        {
+            "rel": "describedby",
+            "href": "https://g1c14d1eec1bfd1-dev1atp.adb.us-ashburn-1.oraclecloudapps.com/ords/rite_dev1/metadata-catalog/pwp/item"
+        },
+        {
+            "rel": "first",
+            "href": "https://g1c14d1eec1bfd1-dev1atp.adb.us-ashburn-1.oraclecloudapps.com/ords/rite_dev1/pwp/PWP_DebugLogs?P_USER_ID=RGorremuchu%40hitt-gc.com"
+        }
+    ]
+}

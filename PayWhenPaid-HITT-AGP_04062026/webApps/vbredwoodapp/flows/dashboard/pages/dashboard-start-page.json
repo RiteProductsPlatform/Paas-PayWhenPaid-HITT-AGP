@@ -1,0 +1,72 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "chartADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "any"
+      }
+    },
+    "chartADP1": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "any"
+      }
+    },
+    "dataADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "any"
+      }
+    },
+    "releaseADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "any"
+      }
+    },
+    "trackerADP": {
+      "type": "vb/ArrayDataProvider2",
+      "defaultValue": {
+        "itemType": "any"
+      }
+    }
+  },
+  "metadata": {},
+  "types": {},
+  "eventListeners": {
+    "vbEnter": {
+      "chains": [
+        {
+          "chain": "PageVbEnterChain",
+          "parameters": {
+            "event": "{{$event}}"
+          }
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-chart": {
+        "path": "ojs/ojchart"
+      },
+      "oj-chart-item": {
+        "path": "ojs/ojchart"
+      },
+      "oj-sp-messages-banner": {
+        "path": "oj-sp/messages-banner/loader"
+      },
+      "oj-sp-welcome-page": {
+        "path": "oj-sp/welcome-page/loader"
+      },
+      "oj-status-meter-gauge": {
+        "path": "ojs/ojgauge"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      }
+    }
+  }
+}

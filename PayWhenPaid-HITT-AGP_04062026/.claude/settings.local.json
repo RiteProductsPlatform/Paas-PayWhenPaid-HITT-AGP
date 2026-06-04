@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(jq '[.[] | .text] | join\\(\"\\\\n\"\\)' \"C:\\\\\\\\Users\\\\\\\\MadhuRenangi\\\\\\\\.claude\\\\\\\\projects\\\\\\\\e--PWP-Paas-PayWhenPaid-HITT-AGP-REPO\\\\\\\\63c3ca51-f3bf-47d5-bd0c-cd836d69343a\\\\\\\\tool-results\\\\\\\\mcp-vbcs-docs-list_docs-1776406231898.txt\")",
+      "Bash(node -e ':*)"
+    ]
+  }
+}

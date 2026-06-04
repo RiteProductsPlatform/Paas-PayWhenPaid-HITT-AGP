@@ -1,0 +1,755 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Riteoicdev Idjm2yj32zav Ia Integration Us Ashburn 1 Ocp Oraclecloud Com",
+        "version": "1.0.0",
+        "x-vb": {
+            "transforms": {
+                "path": "../Transform.js"
+            }
+        }
+    },
+    "servers": [
+        {
+            "url": "vb-catalog://backends/PWP_OIC"
+        }
+    ],
+    "paths": {
+        "/ic/api/integration/v2/flows/rest/project/PAY_WHEN_PAID/PWP_PROJECTSYNC/1.0/getprojects": {
+            "get": {
+                "operationId": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0Getprojects",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0Getprojects"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0Getprojects/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+{
+                        "name": "p_username",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/ic/api/integration/v2/flows/rest/project/PAY_WHEN_PAID/PWP_PJC_TOP_TASK_SYNC/1.0/getprojects": {
+            "get": {
+                "operationId": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PJC_TOP_TASK_SYNC1_0Getprojects",
+                "parameters": [
+                    {
+                        "name": "p_projectid",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "p_username",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PJC_TOP_TASK_SYNC1_0Getprojects"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PJC_TOP_TASK_SYNC1_0Getprojects/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/ic/api/integration/v2/flows/rest/project/PAY_WHEN_PAID/PWP_SUPPLIERS_SYNC/1.0/getprojects": {
+            "get": {
+                "operationId": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_SUPPLIERS_SYNC1_0Getprojects",
+                "parameters": [
+{
+                        "name": "p_username",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_SUPPLIERS_SYNC1_0Getprojects"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_SUPPLIERS_SYNC1_0Getprojects/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/ic/api/integration/v2/flows/rest/project/PAY_WHEN_PAID/PWP_VENDOR_SITES_SYNC/1.0/getprojects": {
+            "get": {
+                "operationId": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_VENDOR_SITES_SYNC1_0Getprojects",
+                "parameters": [
+                    {
+                        "name": "p_username",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "p_vendor_id",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_VENDOR_SITES_SYNC1_0Getprojects"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_VENDOR_SITES_SYNC1_0Getprojects/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/ic/api/integration/v2/flows/rest/project/PAY_WHEN_PAID/PWP_PJC_TASK_SYNC/1.0/getprojects": {
+            "get": {
+                "operationId": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PJC_TASK_SYNC1_0Getprojects2",
+                "parameters": [
+                    {
+                        "name": "p_username",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "TOP_TASK_ID",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+{
+                        "name": "p_projectid",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PJC_TASK_SYNC1_0Getprojects"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PJC_TASK_SYNC1_0Getprojects2/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/ic/api/integration/v2/flows/rest/project/PAY_WHEN_PAID/PWP_CONTRACTS_SYNC/1.0/getprojects": {
+            "get": {
+                "operationId": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_CONTRACTS_SYNC1_0Getprojects",
+                "parameters": [
+{
+                        "name": "p_username",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_CONTRACTS_SYNC1_0Getprojects"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_CONTRACTS_SYNC1_0Getprojects/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/ic/api/integration/v2/flows/rest/project/PAY_WHEN_PAID/PWP_EXP_CATEGORY_SYNC/1.0/getprojects": {
+            "get": {
+                "operationId": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_EXP_CATEGORY_SYNC1_0Getprojects",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_EXP_CATEGORY_SYNC1_0Getprojects"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_EXP_CATEGORY_SYNC1_0Getprojects/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                },
+                "parameters": [
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
+        },
+        "/ic/api/integration/v2/flows/rest/project/PAY_WHEN_PAID/PWP_EXPENDITUR_TYPE/1.0/getprojects": {
+            "get": {
+                "operationId": "getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_EXPENDITUR_TYPE1_0Getprojects",
+                "parameters": [
+{
+                        "name": "P_EXP_CATEGORY_ID",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "R_TRACE_ID",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_PAGE_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }                    ,
+                    {
+                        "name": "R_USER_NAME",
+                        "in": "header",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_EXPENDITUR_TYPE1_0Getprojects"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_EXPENDITUR_TYPE1_0Getprojects/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0Getprojects": {
+                "type": "object",
+                "properties": {
+                    "DATA_DS": {
+                        "type": "object",
+                        "properties": {
+                            "G_1": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "PROJECT_NUMBER": {
+                                            "type": "string"
+                                        },
+                                        "PROJECT_ID": {
+                                            "type": "string"
+                                        },
+                                        "PROJECT_STATUS_CODE": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "BU_name": {
+                                            "type": "string"
+                                        },
+                                        "BU_ID": {
+                                            "type": "string"
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PROJECTSYNC1_0GetprojectsP_usernameRiteUser": {
+                "type": "object",
+                "properties": {
+                    "DATA_DS": {
+                        "type": "object",
+                        "properties": {
+                            "G_1": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "PROJECT_NUMBER": {
+                                            "type": "string"
+                                        },
+                                        "PROJECT_ID": {
+                                            "type": "string"
+                                        },
+                                        "PROJECT_NAME": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PJC_TOP_TASK_SYNC1_0Getprojects": {
+                "type": "object",
+                "properties": {
+                    "DATA_DS": {
+                        "type": "object",
+                        "properties": {
+                            "G_1": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "PROJECT_ID": {
+                                            "type": "string"
+                                        },
+                                        "TASK_ID": {
+                                            "type": "string"
+                                        },
+                                        "TASK_NUMBER": {
+                                            "type": "string"
+                                        },
+                                        "TASK_NAME": {
+                                            "type": "string"
+                                        },
+                                        "TOP_TASK_ID": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_SUPPLIERS_SYNC1_0Getprojects": {
+                "type": "object",
+                "properties": {
+                    "DATA_DS": {
+                        "type": "object",
+                        "properties": {
+                            "G_1": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "VENDOR_ID": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "SUPPLIER_NUMBER": {
+                                            "type": "string"
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_VENDOR_SITES_SYNC1_0Getprojects": {
+                "type": "object",
+                "properties": {
+                    "DATA_DS": {
+                        "type": "object",
+                        "properties": {
+                            "G_1": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "VENDOR_SITE_ID": {
+                                            "type": "string"
+                                        },
+                                        "VENDOR_ID": {
+                                            "type": "string"
+                                        },
+                                        "PRC_BU_ID": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_PJC_TASK_SYNC1_0Getprojects": {
+                "type": "object",
+                "properties": {
+                    "DATA_DS": {
+                        "type": "object",
+                        "properties": {
+                            "G_1": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "PROJECT_ID": {
+                                            "type": "string"
+                                        },
+                                        "TASK_ID": {
+                                            "type": "string"
+                                        },
+                                        "TASK_NUMBER": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "TOP_TASK_ID": {
+                                            "type": "string"
+                                        },
+                                        "TOP_TASK_NAME": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_CONTRACTS_SYNC1_0Getprojects": {
+                "type": "object",
+                "properties": {
+                    "DATA_DS": {
+                        "type": "object",
+                        "properties": {
+                            "G_1": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "CONTRACT_ID": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_EXP_CATEGORY_SYNC1_0Getprojects": {
+                "type": "object",
+                "properties": {
+                    "DATA_DS": {
+                        "type": "object",
+                        "properties": {
+                            "G_1": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "EXPENDITURE_CATEGORY_ID": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetIcApiIntegrationV2FlowsRestProjectPAY_WHEN_PAIDPWP_EXPENDITUR_TYPE1_0Getprojects": {
+                "type": "object",
+                "properties": {
+                    "DATA_DS": {
+                        "type": "object",
+                        "properties": {
+                            "G_1": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
